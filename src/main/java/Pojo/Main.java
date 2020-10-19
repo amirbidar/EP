@@ -5,6 +5,7 @@ public class Main {
         Test test=new Test();
         test.setId(1L);
         test.setAverage(12F);
+        test.setAverage(15F);
     }
 
 }
