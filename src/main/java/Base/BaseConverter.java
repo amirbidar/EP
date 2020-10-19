@@ -1,5 +1,8 @@
 package Base;
 
+import lombok.Data;
+
+@Data
 public class BaseConverter {
     private String factory;
     private String toValue;
