@@ -1,8 +1,8 @@
 package Widgets;
 
+import Attributes.Currency.EventCurrency;
 import Attributes.ListItem.ListItemGeneral;
 import Attributes.TabFolder.TabFolderSelectedTab;
-import Base.BaseEvents;
 import Base.BasePresentation;
 import lombok.Data;
 
@@ -10,6 +10,6 @@ import lombok.Data;
 public class TabFolder {
     private ListItemGeneral general;
     private BasePresentation presentation;
-    private BaseEvents events;
+    private EventCurrency events;
     private TabFolderSelectedTab selectedTab;
 }

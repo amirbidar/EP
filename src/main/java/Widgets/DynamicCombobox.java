@@ -3,8 +3,8 @@ package Widgets;
 import Attributes.DynamicComboBox.DynamicComboboxData;
 import Attributes.DynamicComboBox.DynamicComboboxGeneral;
 import Attributes.DynamicComboBox.DynamicComboboxPresentation;
+import Attributes.StaticComboBox.EventComboBox;
 import Base.BaseConverter;
-import Base.BaseEvents;
 import Base.BaseListener;
 import Base.BaseValidation;
 import lombok.Data;
@@ -16,6 +16,6 @@ public class DynamicCombobox {
     private DynamicComboboxData data;
     private BaseConverter converter;
     private BaseListener listener;
-    private BaseEvents events;
+    private EventComboBox events;
     private BaseValidation validation;
 }

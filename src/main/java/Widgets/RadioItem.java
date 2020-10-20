@@ -1,5 +1,6 @@
 package Widgets;
 
+import Attributes.RadioGroup.EventRadioGroup;
 import Attributes.RadioItem.*;
 import Base.*;
 import lombok.Data;
@@ -11,6 +12,6 @@ public class RadioItem {
     private RadioItemData data;
     private BaseConverter converter;
     private BaseListener listener;
-    private BaseEvents events;
+    private EventRadioItem events;
     private BaseValidation validation;
 }

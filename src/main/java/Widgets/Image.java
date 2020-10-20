@@ -1,6 +1,6 @@
 package Widgets;
 
-import Base.BaseEvents;
+import Attributes.Link.EventLink;
 import Base.BaseGeneral_StaticWidgets;
 import Base.BaseLayoutData;
 import Base.BasePresentation;
@@ -12,6 +12,6 @@ public class Image {
     private BaseLayoutData layoutData;
     private BasePresentation presentation;
     private String URL;
-    private BaseEvents events;
+    private EventLink events;
 
 }

@@ -1,5 +1,6 @@
 package Widgets;
 
+import Attributes.StaticComboBox.EventComboBox;
 import Attributes.StaticComboBox.ItemsComboBox;
 import Attributes.StaticComboBox.PresentationComboBox;
 import Base.*;
@@ -15,7 +16,7 @@ public class ComboBox {
     private BaseData data;
     private BaseConverter converter;
     private BaseListener listener;
-    private BaseEvents events;
+    private EventComboBox events;
     private ItemsComboBox items;
     private BaseValidation validation;
 

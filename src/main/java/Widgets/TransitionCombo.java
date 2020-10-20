@@ -1,9 +1,9 @@
 package Widgets;
 
+import Attributes.StaticComboBox.EventComboBox;
 import Attributes.StaticList.StaticListGeneral;
 import Attributes.TransitionCombo.*;
 import Base.BaseConverter;
-import Base.BaseEvents;
 import Base.BaseListener;
 import Base.BaseValidation;
 
@@ -13,6 +13,6 @@ public class TransitionCombo {
     private TransitionComboData data;
     private BaseConverter converter;
     private BaseListener listener;
-    private BaseEvents events;
+    private EventComboBox events;
     private BaseValidation validation;
 }

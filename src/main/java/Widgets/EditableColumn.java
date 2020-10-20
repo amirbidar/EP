@@ -1,13 +1,11 @@
 package Widgets;
 
 import Attributes.EditableColumn.DataEditableColumn;
+import Attributes.EditableColumn.EditorEditableColumn;
 import Attributes.EditableColumn.GeneralEditableColumn;
 import Attributes.EditableColumn.PresentationEditableColumn;
-import Attributes.EditableTable.GeneralEditableTable;
-import com.sun.xml.internal.bind.v2.TODO;
 import lombok.Data;
 
-import java.util.List;
 
 @Data
 public class EditableColumn {
@@ -15,6 +13,13 @@ public class EditableColumn {
     private PresentationEditableColumn presentation;
     private DataEditableColumn data;
     private String EditorType;
+    private EditorEditableColumn editorEditableColumn;
+
+
+
+
+    // editor ->
+
     // TODO: 10/19/2020 Ask Editor
 
 }

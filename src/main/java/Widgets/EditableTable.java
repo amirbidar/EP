@@ -1,6 +1,7 @@
 package Widgets;
 
 import Attributes.EditableTable.DataEditableTable;
+import Attributes.EditableTable.EventEditableTable;
 import Attributes.EditableTable.GeneralEditableTable;
 import Attributes.EditableTable.PresentationEditableTable;
 import Base.*;
@@ -17,10 +18,7 @@ public class EditableTable {
     private List<EditableColumn> columnOrder;
     private BaseConverter baseConverter;
     private BaseListener listener;
-    private BaseEvents events;
+    private EventEditableTable events;
     private BaseValidation validation;
-
-
-
 
 }

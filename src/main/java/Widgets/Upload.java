@@ -1,5 +1,6 @@
 package Widgets;
 
+import Attributes.Frame.EventFrame;
 import Attributes.Upload.DataUpload;
 import Attributes.Upload.FileUpload;
 import Attributes.Upload.GeneralUpload;
@@ -14,7 +15,7 @@ public class Upload {
     private DataUpload data;
     private BaseConverter converter;
     private BaseListener listener;
-    private BaseEvents events;
+    private EventFrame events;
     private FileUpload File;
     private BaseValidation validation;
 

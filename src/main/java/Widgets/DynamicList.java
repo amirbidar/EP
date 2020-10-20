@@ -1,6 +1,7 @@
 package Widgets;
 
 import Attributes.DynamicList.*;
+import Attributes.StaticComboBox.EventComboBox;
 import Base.*;
 import lombok.Data;
 
@@ -11,6 +12,6 @@ public class DynamicList extends BaseData {
     private DynamicListData data;
     private BaseConverter converter;
     private BaseListener listener;
-    private BaseEvents events;
+    private EventComboBox events;
     private BaseValidation validation;
 }

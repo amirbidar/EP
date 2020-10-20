@@ -1,6 +1,7 @@
 package Widgets;
 
 import Attributes.DynamicWidget.*;
+import Attributes.StaticComboBox.EventComboBox;
 import Base.*;
 import lombok.Data;
 
@@ -9,5 +10,5 @@ public class DynamicWidgets {
     private DynamicWidgetsGeneral general;
     private BasePresentation presentation;
     private DynamicWidgetsData data;
-    private BaseEvents events;
+    private EventComboBox events;
 }

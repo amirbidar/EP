@@ -1,5 +1,6 @@
 package Widgets;
 
+import Attributes.Currency.EventCurrency;
 import Attributes.TextField.DataTextField;
 import Attributes.TextField.GeneralTextField;
 import Base.*;
@@ -20,7 +21,7 @@ public class TextField {
 
     private BaseListener baseListener;
 
-    private BaseEvents baseEvents;
+    private EventCurrency baseEvents;
 
     private BaseValidation baseValidation;
 

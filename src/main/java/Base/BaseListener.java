@@ -12,7 +12,7 @@ public class BaseListener {
 
 @Data
      class Phase{
-        private String phaseName;
+        private Enum.Enums.ListenerPhaseAction phaseName;
         private String phaseAction;
         private String condition;
     }

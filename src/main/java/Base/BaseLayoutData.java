@@ -8,8 +8,8 @@ public class BaseLayoutData {
     private Integer verticalSpan;
     private Integer horizontalHint;
     private Integer verticalHint;
-    private String horizontalAlign;
-    private String verticalAlign;
+    private Enum.Enums.ColumnAlignment horizontalAlign;
+    private Enum.Enums.ColumnAlignment verticalAlign;
     private Boolean horizontalGrab;
     private Boolean verticalGrab;
 

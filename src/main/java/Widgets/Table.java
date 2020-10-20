@@ -1,5 +1,6 @@
 package Widgets;
 
+import Attributes.Table.EventTable;
 import Base.BaseEntities;
 import Attributes.Table.GeneralTable;
 import Base.BasePagination;
@@ -19,7 +20,7 @@ public class Table {
     private List<Column> colomnOrder;
     private BasePagination basePagination;
     private BaseListener baseListener;
-    private BaseEvents events;
+    private EventTable events;
     private BaseValidation validation;
 
 

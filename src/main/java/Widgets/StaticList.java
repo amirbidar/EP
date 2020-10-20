@@ -1,5 +1,7 @@
 package Widgets;
 
+import Attributes.Button.EventButton;
+import Attributes.Frame.EventFrame;
 import Attributes.StaticList.*;
 import Base.*;
 import lombok.Data;
@@ -11,6 +13,6 @@ public class StaticList {
     private StaticListData data;
     private BaseConverter converter;
     private BaseListener listener;
-    private BaseEvents events;
+    private EventFrame events;
     private BaseValidation validation;
 }

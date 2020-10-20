@@ -1,24 +1,26 @@
-package Base;
+package Attributes.RadioGroup;
 
+import Attributes.Button.EventButton;
 import lombok.Data;
 
 import java.util.List;
-@Data
-public class BaseEvents {
-    List<events> events;
 
+@Data
+public class EventRadioGroup {
+    private String eventName;
+    List<events> events;
     @Data
     class events{
-        private String type;
+        private Enum.Enums.EventLink type;
         private String name;
         private String submitRegion;
         private String renderer;
-        private String phase;
-        private String environment;
-        private String language;
+        private Enum.Enums.StaticComboboxEvent phase;
+        private Enum.Enums.Environment environment;
+        private Enum.Enums.Language language;
         private String action;
         private CallBack callBack;
-        private Arguments arguments;
+        private List<Arguments> arguments;
     }
     @Data
     class CallBack{
@@ -37,4 +39,5 @@ public class BaseEvents {
         private String name;
         private String value;
     }
+
 }

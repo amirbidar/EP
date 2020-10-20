@@ -1,6 +1,6 @@
 package Widgets;
 
-import Base.BaseEvents;
+import Attributes.Currency.EventCurrency;
 import Base.BaseListener;
 import Attributes.Currency.CurrencyData;
 import Attributes.Currency.CurrencyGeneral;
@@ -13,5 +13,5 @@ public class Currency {
     private CurrencyPresentation presentation;
     private CurrencyData data;
     private BaseListener listener;
-    private BaseEvents events;
+    private EventCurrency events;
 }

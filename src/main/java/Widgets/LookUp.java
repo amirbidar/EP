@@ -1,9 +1,6 @@
 package Widgets;
 
-import Attributes.LookUp.ColumnsLookUp;
-import Attributes.LookUp.DataLookUp;
-import Attributes.LookUp.GeneralLookUp;
-import Attributes.LookUp.PresentationLookUp;
+import Attributes.LookUp.*;
 import Base.*;
 import javafx.scene.control.Pagination;
 import lombok.Data;
@@ -19,7 +16,7 @@ public class LookUp {
     private BasePagination pagination;
     private BaseConverter converter;
     private BaseListener listener;
-    private BaseEvents events;
+    private EventLookUp events;
     private BaseValidation validation;
 
 

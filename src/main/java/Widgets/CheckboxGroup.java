@@ -2,10 +2,10 @@ package Widgets;
 
 import Attributes.DynamicCheckbox.DynamicCheckboxLayout;
 import Attributes.DynamicCheckbox.DynamicCheckboxPresentation;
+import Attributes.RadioGroup.EventRadioGroup;
 import Attributes.RadioGroup.RadioGroupData;
 import Attributes.RadioGroup.RadioGroupGeneral;
 import Base.BaseConverter;
-import Base.BaseEvents;
 import Base.BaseListener;
 import Base.BaseValidation;
 import lombok.Data;
@@ -18,6 +18,6 @@ public class CheckboxGroup {
     private RadioGroupData data;
     private BaseConverter converter;
     private BaseListener listener;
-    private BaseEvents events;
+    private EventRadioGroup events;
     private BaseValidation validation;
 }

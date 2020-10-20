@@ -1,7 +1,7 @@
 package Widgets;
 
+import Attributes.Link.EventLink;
 import Attributes.Link.GeneralLink;
-import Base.BaseEvents;
 import Base.BaseLayoutData;
 import Base.BaseListener;
 import Base.BasePresentation;
@@ -15,7 +15,7 @@ public class Link {
     private BasePresentation presentation;
     private String Href;
     private BaseListener listener;
-    private BaseEvents events;
+    private EventLink events;
 
 
 }

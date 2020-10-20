@@ -14,6 +14,7 @@ public class RadioGroup {
     private RadioGroupData data;
     private BaseConverter converter;
     private BaseListener listener;
-    private BaseEvents events;
+    private EventRadioGroup events;
     private BaseValidation validation;
+
 }

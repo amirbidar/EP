@@ -21,19 +21,19 @@ public class BaseValidation {
     }
     @Data
     class ScriptValidator{
-        private String environment;
-        private String language;
-        private String phase;
+        private Enum.Enums.NumberValidatorEnvironment environment;
+        private Enum.Enums.Language language;
+        private Enum.Enums.EventPhase phase;
         private String errorMessage;
         private String script;
     }
     @Data
     class RequiredValidator{
-        private String environment;
+        private Enum.Enums.NumberValidatorEnvironment environment;
     }
     @Data
     class NumberValidator{
-        private String environment;
+        private Enum.Enums.NumberValidatorEnvironment environment;
         private Integer minimumValue;
         private Integer maximumValue;
         private Boolean includeMinimumBoundry;
@@ -42,7 +42,7 @@ public class BaseValidation {
     }
     @Data
     class StringValidator{
-        private String environment;
+        private Enum.Enums.NumberValidatorEnvironment environment;
         private String regularExpression;
         private String errorMessageRegularExpression;
         private Integer minimumLength;
@@ -51,7 +51,7 @@ public class BaseValidation {
     }
     @Data
     class EmailValidator{
-        private String environment;
+        private Enum.Enums.NumberValidatorEnvironment environment;
     }
 
 }

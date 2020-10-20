@@ -1,5 +1,6 @@
 package Widgets;
 
+import Attributes.Currency.EventCurrency;
 import Attributes.TextArea.DataTextArea;
 import Attributes.TextArea.GeneralTextArea;
 import Base.*;
@@ -13,7 +14,7 @@ public class TextArea {
     private DataTextArea data;
     private BaseConverter converter;
     private BaseListener listener;
-    private BaseEvents events;
+    private EventCurrency events;
     private BaseValidation validation;
 
 

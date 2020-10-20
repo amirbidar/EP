@@ -2,8 +2,8 @@ package Widgets;
 
 import Attributes.DynamicCheckbox.*;
 import Attributes.DynamicRadio.*;
+import Attributes.StaticComboBox.EventComboBox;
 import Base.BaseConverter;
-import Base.BaseEvents;
 import Base.BaseListener;
 import Base.BaseValidation;
 import lombok.Data;
@@ -17,6 +17,6 @@ public class DynamicRadio {
     private DynamicRadioItemFinder itemFinder;
     private BaseConverter converter;
     private BaseListener listener;
-    private BaseEvents events;
+    private EventComboBox events;
     private BaseValidation validation;
 }

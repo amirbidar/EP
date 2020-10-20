@@ -1,6 +1,7 @@
 package Widgets;
 
 import Attributes.PasswordField.DataPasswordField;
+import Attributes.PasswordField.EventPasswordField;
 import Attributes.PasswordField.GeneralPasswordField;
 import Attributes.PasswordField.PresentationPasswordField;
 import Base.*;
@@ -14,6 +15,6 @@ public class PasswordField {
     private DataPasswordField data;
     private BaseConverter converter;
     private BaseListener listener;
-    private BaseEvents events;
+    private EventPasswordField events;
     private BaseValidation validation;
 }
