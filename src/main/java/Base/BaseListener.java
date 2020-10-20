@@ -10,7 +10,7 @@ public class BaseListener {
 
 
 
-
+@Data
      class Phase{
         private String phaseName;
         private String phaseAction;
