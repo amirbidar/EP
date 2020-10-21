@@ -6,6 +6,6 @@ import lombok.Data;
 @Data
 public class GeneralTable extends BaseGeneral {
     private String label;
-    private String selectionMode;
+    private Enum.Enums.TableSelectionMode selectionMode;
     private String header;
 }

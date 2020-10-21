@@ -11,7 +11,7 @@ public class EventRadioGroup {
     List<events> events;
     @Data
     class events{
-        private Enum.Enums.EventLink type;
+        private Enum.Enums.StaticComboboxEvent type;
         private String name;
         private String submitRegion;
         private String renderer;

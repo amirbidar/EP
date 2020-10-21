@@ -1,6 +1,7 @@
 package Base;
 
 import Attributes.Form.*;
+import Attributes.Frame.EventFrame;
 import lombok.Data;
 
 import java.util.List;
@@ -12,7 +13,7 @@ private PresentationForm presentation;
 private HiddnControls hiddenControls;
 private WidgetOrder widgetOrder;
 private BaseListener listener;
-private BaseEvents events;
+private EventFrame events;
 private PopupForm popup;
 private FormRefrences formRefrences;
 private BaseValidation validation;

@@ -1,16 +1,17 @@
-package Attributes.Tree;
+package Attributes.Form;
 
 import lombok.Data;
 
 import java.util.List;
+
 @Data
-public class EventTree {
+public class EventPopup {
 
     private String eventName;
     List<events> events;
     @Data
     class events{
-        private Enum.Enums.EventTypeTree type;
+        private Enum.Enums.EventPopUp type;
         private String name;
         private String submitRegion;
         private String renderer;

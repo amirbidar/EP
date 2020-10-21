@@ -7,6 +7,6 @@ import lombok.Data;
 @Data
 public class GeneralLink extends BaseGeneral_StaticWidgets {
     private String text;
-    private String target;
+    private Enum.Enums.TargetLink target;
 
 }

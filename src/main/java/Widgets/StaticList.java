@@ -6,6 +6,8 @@ import Attributes.StaticList.*;
 import Base.*;
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 public class StaticList {
     private StaticListGeneral general;
@@ -15,4 +17,5 @@ public class StaticList {
     private BaseListener listener;
     private EventFrame events;
     private BaseValidation validation;
+    List<ListItem> itemOrder;
 }

@@ -1,5 +1,6 @@
 package Attributes.DynamicRadio;
 
+import Attributes.RadioItem.EventRadioItem;
 import Base.*;
 import lombok.Data;
 
@@ -9,7 +10,7 @@ public class DynamicRadioItemFinder {
     private DynamicRadioItemFinder itemFinder;
     private DynamicRadioItemFinderData data;
     private BasePresentation presentation;
-    private BaseEvents events;
+    private EventRadioItem events;
     private BaseValidation validators;
     private BaseListener listener;
     private BaseConverter converter;

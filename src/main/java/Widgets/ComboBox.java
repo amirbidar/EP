@@ -1,5 +1,6 @@
 package Widgets;
 
+import Attributes.Form.EventPopup;
 import Attributes.StaticComboBox.EventComboBox;
 import Attributes.StaticComboBox.ItemsComboBox;
 import Attributes.StaticComboBox.PresentationComboBox;
@@ -19,6 +20,7 @@ public class ComboBox {
     private EventComboBox events;
     private ItemsComboBox items;
     private BaseValidation validation;
+
 
 
 

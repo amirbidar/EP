@@ -38,6 +38,9 @@ public class Enums{
         ON_LOAD,
         ON_FOCUS_LOST
     }
+    public  enum EventPopUp{
+        ON_WINDOW_CLOSE
+    }
     public enum DatePickerMode{
       DATE,
       TIME,
@@ -121,7 +124,8 @@ public class Enums{
         ON_FOCUS_LOST
     }
     public enum EventEditableTable{
-        ON_CLICK,ON_LOAD,
+        ON_CLICK,
+        ON_LOAD,
         ON_SELECTION_CHANGE ,
         ON_ROW_ACTION,
         ON_FOCUS_LOST,
@@ -187,6 +191,9 @@ public class Enums{
     }
     public enum eventType{
         ON_LOAD
+    }
+    public enum EventDynamicWidget {
+        ON_FOCUS_LOST
     }
     public enum TableEventType{
         ON_LOAD,ON_FIRST,ON_LAST,

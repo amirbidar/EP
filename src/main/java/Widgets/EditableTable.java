@@ -20,5 +20,6 @@ public class EditableTable {
     private BaseListener listener;
     private EventEditableTable events;
     private BaseValidation validation;
+    private List<EditableColumn> children;
 
 }

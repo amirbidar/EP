@@ -22,6 +22,8 @@ public class Table {
     private BaseListener baseListener;
     private EventTable events;
     private BaseValidation validation;
+    List<Column> children;
+    // TODO: 10/21/2020 ask about children also editable one
 
 
 }

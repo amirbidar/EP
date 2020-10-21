@@ -1,7 +1,9 @@
 package Attributes.EditableColumn;
 
 import Base.BaseData;
+import lombok.Data;
 
+@Data
 public class DataEditableColumn extends BaseData {
-    private String type;
+    private Enum.Enums.ColumnType type;
 }

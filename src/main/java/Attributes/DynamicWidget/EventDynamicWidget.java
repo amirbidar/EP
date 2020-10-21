@@ -1,16 +1,15 @@
-package Attributes.Tree;
+package Attributes.DynamicWidget;
 
 import lombok.Data;
 
 import java.util.List;
 @Data
-public class EventTree {
-
+public class EventDynamicWidget {
     private String eventName;
     List<events> events;
     @Data
     class events{
-        private Enum.Enums.EventTypeTree type;
+        private Enum.Enums.EventDynamicWidget event;
         private String name;
         private String submitRegion;
         private String renderer;
@@ -38,4 +37,5 @@ public class EventTree {
         private String name;
         private String value;
     }
+
 }

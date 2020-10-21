@@ -4,7 +4,7 @@ import Attributes.RadioGroup.EventRadioGroup;
 import lombok.Data;
 
 import java.util.List;
-
+@Data
 public class EventRadioItem {
     private String eventName;
     List<events> events;

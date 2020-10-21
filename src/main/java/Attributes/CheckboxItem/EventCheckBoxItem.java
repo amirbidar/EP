@@ -4,7 +4,7 @@ import Attributes.Button.EventButton;
 import lombok.Data;
 
 import java.util.List;
-
+@Data
 public class EventCheckBoxItem {
     private String eventName;
     List<events> events;

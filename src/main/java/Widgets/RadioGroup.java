@@ -6,6 +6,8 @@ import Attributes.RadioGroup.*;
 import Base.*;
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 public class RadioGroup {
     private RadioGroupGeneral general;
@@ -16,5 +18,6 @@ public class RadioGroup {
     private BaseListener listener;
     private EventRadioGroup events;
     private BaseValidation validation;
+    List<RadioItem> children;
 
 }

@@ -7,7 +7,7 @@ import lombok.Data;
 @Data
 public class GeneralButton extends BaseGeneral_StaticWidgets {
     private String caption;
-    private String action;
+    private Enum.Enums.ButtonAction action;
     private Boolean defaultKey;
 
 }

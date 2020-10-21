@@ -4,7 +4,7 @@ import Attributes.Currency.EventCurrency;
 import lombok.Data;
 
 import java.util.List;
-
+@Data
 public class EventTable {
     private String eventName;
     List<events> events;

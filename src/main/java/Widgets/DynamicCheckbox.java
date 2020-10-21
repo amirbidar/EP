@@ -2,6 +2,7 @@ package Widgets;
 
 import Attributes.DatePicker.EventDatePicker;
 import Attributes.DynamicCheckbox.*;
+import Attributes.StaticComboBox.EventComboBox;
 import Base.*;
 import lombok.Data;
 
@@ -13,6 +14,6 @@ public class DynamicCheckbox {
     private DynamicCheckBoxItemFinder itemFinder;
     private BaseConverter converter;
     private BaseListener listener;
-    private EventDatePicker event;
+    private EventComboBox event;
     private BaseValidation validation;
 }

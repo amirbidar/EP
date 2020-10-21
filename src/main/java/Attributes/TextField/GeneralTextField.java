@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 public class GeneralTextField extends BaseGeneral_StaticWidgets {
-    private String  direction;
+    private Enum.Enums.Direction direction;
     private Boolean formatNumber;
     private Boolean defaultWidget;
 }

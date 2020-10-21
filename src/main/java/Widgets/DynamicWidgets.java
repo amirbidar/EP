@@ -10,5 +10,5 @@ public class DynamicWidgets {
     private DynamicWidgetsGeneral general;
     private BasePresentation presentation;
     private DynamicWidgetsData data;
-    private EventComboBox events;
+    private EventDynamicWidget events;
 }

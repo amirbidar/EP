@@ -6,7 +6,9 @@ import Attributes.TransitionCombo.*;
 import Base.BaseConverter;
 import Base.BaseListener;
 import Base.BaseValidation;
+import lombok.Data;
 
+@Data
 public class TransitionCombo {
     private StaticListGeneral general;
     private TransitionComboPresentation presentation;

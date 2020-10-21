@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 public class GeneralTextArea extends BaseGeneral_StaticWidgets {
-    private String  direction;
+    private Enum.Enums.Direction direction;
     private Boolean enableHtml;
     private Boolean defaultWidget;
 }

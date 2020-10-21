@@ -11,7 +11,7 @@ public class PopupForm {
     @Data
     class MPopup{
       private String popupName;
-      private BaseEvents events;
+      private EventPopup events;
 
     }
 }

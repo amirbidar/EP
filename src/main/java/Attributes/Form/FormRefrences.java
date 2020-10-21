@@ -12,7 +12,7 @@ public class FormRefrences {
   @Data
     class MReference{
         private String referenceName;
-        private BaseEvents events;
+        private EventPopup events;
 
 
 

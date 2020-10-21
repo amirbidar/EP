@@ -4,7 +4,7 @@ import Attributes.LookUp.EventLookUp;
 import lombok.Data;
 
 import java.util.List;
-
+@Data
 public class EventPasswordField {
     private String eventName;
     List<events> events;

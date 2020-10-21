@@ -1,5 +1,8 @@
 package Attributes.Upload;
 
+import lombok.Data;
+
+@Data
 public class DataUpload {
     private String dataValue;
     private String dataCondition;

@@ -1,5 +1,6 @@
 package Widgets;
 
+import Attributes.Frame.EventFrame;
 import Attributes.Link.EventLink;
 import Base.*;
 import lombok.Data;
@@ -16,5 +17,5 @@ public class Label {
 
      private BaseListener listener;
 
-     private EventLink events;
+     private EventFrame events;
 }

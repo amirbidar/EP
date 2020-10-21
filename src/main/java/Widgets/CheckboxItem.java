@@ -4,7 +4,9 @@ import Attributes.CheckboxItem.CheckboxItemData;
 import Attributes.CheckboxItem.EventCheckBoxItem;
 import Attributes.DynamicWidget.DynamicWidgetsGeneral;
 import Base.*;
+import lombok.Data;
 
+@Data
 public class CheckboxItem {
     private DynamicWidgetsGeneral general;
     private BasePresentation presentation;
