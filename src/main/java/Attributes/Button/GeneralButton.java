@@ -10,5 +10,9 @@ public class GeneralButton extends BaseGeneral_StaticWidgets {
     private String caption;
     private EnumsDecleration.ButtonAction action;
     private Boolean defaultKey;
+    private String readOnly;
+    private String direction;
+    private String formatNumber;
+    private String enabled;
 
 }

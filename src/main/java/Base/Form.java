@@ -7,9 +7,7 @@ import lombok.Data;
 import java.util.List;
 @Data
 public class Form {
-
     private GeneralForm general;
-    private ResourcesForm resources;
     private LayoutForm layout;
     private PresentationForm presentation;
     private HiddnControls hiddenControls;
@@ -19,6 +17,5 @@ public class Form {
     private FormRefrences formRefrences;
     private EventFrame events;
     private BaseValidation validation;
-    private List<FormChildren> formChildrenList;
-
+    private List<FormChildren> children;
 }

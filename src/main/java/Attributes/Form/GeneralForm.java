@@ -4,6 +4,8 @@ import lombok.Data;
 
 @Data
 public class GeneralForm {
+    private String xmlns;
+    private String xmlnsxsd;
     private String name;
     private String label;
     private String title;
@@ -11,6 +13,7 @@ public class GeneralForm {
     private String visible;
     private String clientLanguage;
     private String description;
+    private ResourcesForm resources;
 
 
 }
