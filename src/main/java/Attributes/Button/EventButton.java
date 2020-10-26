@@ -1,6 +1,7 @@
 package Attributes.Button;
 
 import lombok.Data;
+import Enum.*;
 
 import java.util.List;
 @Data
@@ -9,13 +10,13 @@ public class EventButton {
     List<events> events;
     @Data
     class events{
-        private Enum.Enums.EventLink type;
+        private EnumsDecleration.EventLink type;
         private String name;
         private String submitRegion;
         private String renderer;
-        private Enum.Enums.EventPhase phase;
-        private Enum.Enums.Environment environment;
-        private Enum.Enums.Language language;
+        private EnumsDecleration.EventPhase phase;
+        private EnumsDecleration.Environment environment;
+        private EnumsDecleration.Language language;
         private String action;
         private CallBack callBack;
         private List<Arguments> arguments;
@@ -30,8 +31,8 @@ public class EventButton {
     @Data
     class Arguments{
         List<MArgument> arguments;
-
     }
+
     @Data
     class MArgument{
         private String name;

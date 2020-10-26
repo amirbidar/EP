@@ -17,5 +17,4 @@ private DataTextField data;
 private BaseConverter converter;
 private BaseListener listener;
 
-
 }

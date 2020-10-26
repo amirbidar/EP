@@ -11,7 +11,7 @@ import java.util.List;
 @Setter
 public class EditorEditableColumn {
 
-        String type;
+        public String type;
 
         public String getType() {
             return type;
@@ -31,15 +31,12 @@ public class EditorEditableColumn {
             editortypes.add(new CheckboxItem());
             editortypes.add(new RadioItem());
             for (Object o:editortypes) {
-                if(o.getClass().getName().toString().toLowerCase().contains(getType().toLowerCase())){
+                if(o.getClass().getName().toLowerCase().contains(getType().toLowerCase())){
                     main=o;
                 }
-
             }
             return main;
 
         }
-
-
 
 }

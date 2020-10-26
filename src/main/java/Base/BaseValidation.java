@@ -1,7 +1,7 @@
 package Base;
 
 import lombok.Data;
-
+import Enum.*;
 import java.util.List;
 @Data
 public class BaseValidation {
@@ -21,19 +21,19 @@ public class BaseValidation {
     }
     @Data
     class ScriptValidator{
-        private Enum.Enums.NumberValidatorEnvironment environment;
-        private Enum.Enums.Language language;
-        private Enum.Enums.EventPhase phase;
+        private EnumsDecleration.NumberValidatorEnvironment environment;
+        private EnumsDecleration.Language language;
+        private EnumsDecleration.EventPhase phase;
         private String errorMessage;
         private String script;
     }
     @Data
     class RequiredValidator{
-        private Enum.Enums.NumberValidatorEnvironment environment;
+        private EnumsDecleration.NumberValidatorEnvironment environment;
     }
     @Data
     class NumberValidator{
-        private Enum.Enums.NumberValidatorEnvironment environment;
+        private EnumsDecleration.NumberValidatorEnvironment environment;
         private Integer minimumValue;
         private Integer maximumValue;
         private Boolean includeMinimumBoundry;
@@ -42,7 +42,7 @@ public class BaseValidation {
     }
     @Data
     class StringValidator{
-        private Enum.Enums.NumberValidatorEnvironment environment;
+        private EnumsDecleration.NumberValidatorEnvironment environment;
         private String regularExpression;
         private String errorMessageRegularExpression;
         private Integer minimumLength;
@@ -51,7 +51,7 @@ public class BaseValidation {
     }
     @Data
     class EmailValidator{
-        private Enum.Enums.NumberValidatorEnvironment environment;
+        private EnumsDecleration.NumberValidatorEnvironment environment;
     }
 
 }

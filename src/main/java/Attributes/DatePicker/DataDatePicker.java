@@ -3,9 +3,10 @@ package Attributes.DatePicker;
 import Base.BaseData;
 import Widgets.DatePicker;
 import lombok.Data;
+import Enum.*;
 
 @Data
 public class DataDatePicker extends BaseData {
-    private Enum.Enums.DatePickerMode mode;
-    private Enum.Enums.DatePickerCalenderMode calenderMode;
+    private EnumsDecleration.DatePickerMode mode;
+    private EnumsDecleration.DatePickerCalenderMode calenderMode;
 }

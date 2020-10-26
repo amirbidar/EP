@@ -1,9 +1,10 @@
 package Attributes.Column;
 
 import lombok.Data;
+import Enum.*;
 
 @Data
 public class DataColumn {
     private Boolean sortable;
-    private Enum.Enums.ColumnType type;
+    private EnumsDecleration.ColumnType type;
 }

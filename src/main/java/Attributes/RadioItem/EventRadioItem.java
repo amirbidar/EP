@@ -2,6 +2,7 @@ package Attributes.RadioItem;
 
 import Attributes.RadioGroup.EventRadioGroup;
 import lombok.Data;
+import Enum.*;
 
 import java.util.List;
 @Data
@@ -10,13 +11,13 @@ public class EventRadioItem {
     List<events> events;
     @Data
     class events{
-        private Enum.Enums.RadioItemEvent type;
+        private EnumsDecleration.RadioItemEvent type;
         private String name;
         private String submitRegion;
         private String renderer;
-        private Enum.Enums.EventPhase phase;
-        private Enum.Enums.Environment environment;
-        private Enum.Enums.Language language;
+        private EnumsDecleration.EventPhase phase;
+        private EnumsDecleration.Environment environment;
+        private EnumsDecleration.Language language;
         private String action;
         private CallBack callBack;
         private List<Arguments> arguments;

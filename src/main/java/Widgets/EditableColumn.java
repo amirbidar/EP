@@ -21,6 +21,6 @@ public class EditableColumn {
     // editor ->
 
     // TODO: 10/19/2020 Ask Editor
-
 }
+
 

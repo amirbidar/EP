@@ -1,12 +1,13 @@
 package Enum;
 
-public class Enums{
+public class EnumsDecleration {
 
     public enum Direction{
       RTL,
       LTR,
       AUTO
     }
+
     public enum EventTypeTextField{
         ON_EDIT,
         ON_LOAD,

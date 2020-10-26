@@ -1,7 +1,7 @@
 package Base;
 
 import lombok.Data;
-
+import Enum.*;
 import java.util.List;
 @Data
 public class BaseListener {
@@ -12,7 +12,7 @@ public class BaseListener {
 
 @Data
      class Phase{
-        private Enum.Enums.ListenerPhaseAction phaseName;
+        private EnumsDecleration.ListenerPhaseAction phaseName;
         private String phaseAction;
         private String condition;
     }

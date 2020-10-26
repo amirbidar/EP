@@ -1,6 +1,7 @@
 package Base;
 
 import lombok.Data;
+import Enum.*;
 
 @Data
 public class BaseLayoutData {
@@ -8,8 +9,8 @@ public class BaseLayoutData {
     private Integer verticalSpan;
     private Integer horizontalHint;
     private Integer verticalHint;
-    private Enum.Enums.ColumnAlignment horizontalAlign;
-    private Enum.Enums.ColumnAlignment verticalAlign;
+    private EnumsDecleration.ColumnAlignment horizontalAlign;
+    private EnumsDecleration.ColumnAlignment verticalAlign;
     private Boolean horizontalGrab;
     private Boolean verticalGrab;
 
