@@ -1,21 +1,19 @@
 package Base;
 
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import lombok.Data;
 import Enum.*;
 import java.util.List;
 @Data
 public class BaseListener {
-    List<Phase> listeners;
+    private EnumsDecleration.ListenerPhaseAction phase;
+    private String action;
+    private String condition;
 
-
-
-
-@Data
+/*@Data
      class Phase{
-        private EnumsDecleration.ListenerPhaseAction phaseName;
-        private String phaseAction;
-        private String condition;
-    }
+
+    }*/
 
 
 }

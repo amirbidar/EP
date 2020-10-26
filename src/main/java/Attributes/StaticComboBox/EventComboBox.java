@@ -1,26 +1,13 @@
 package Attributes.StaticComboBox;
 
-import Attributes.Button.EventButton;
 import lombok.Data;
-import Enum.*;
+
 import java.util.List;
 @Data
 public class EventComboBox {
     private String eventName;
-    List<events> events;
-    @Data
-    class events{
-        private EnumsDecleration.StaticComboboxEvent type;
-        private String name;
-        private String submitRegion;
-        private String renderer;
-        private EnumsDecleration.EventPhase phase;
-        private EnumsDecleration.Environment environment;
-        private EnumsDecleration.Language language;
-        private String action;
-        private CallBack callBack;
-        private List<Arguments> arguments;
-    }
+    List<eventsComboBox> eventsComboBox;
+
     @Data
     class CallBack{
         private String onSuccess;

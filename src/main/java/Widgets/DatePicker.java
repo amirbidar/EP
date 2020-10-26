@@ -1,20 +1,34 @@
 package Widgets;
 
-import Attributes.DatePicker.DataDatePicker;
-import Attributes.DatePicker.EventDatePicker;
-import Attributes.DatePicker.PresentationDatePicker;
+import Attributes.DatePicker.*;
 import Base.*;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import lombok.Data;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 public class DatePicker {
-    private BaseGeneral_StaticWidgets general;
-    private BaseLayoutData layoutData;
-    private PresentationDatePicker presentation;
-    private DataDatePicker data;
+    private String mode;
+    private String value;
+    private Boolean readonly;
+    private String tooltip;
+    private String calendarMode;
+    private String name;
+    private Boolean enabled;
+    private String label;
+    private Boolean layoutable;
+    @JacksonXmlProperty(localName = "layout-data")
+    private BaseLayoutData baseLayoutData;
+
+    private List<Validations> validators =new ArrayList<>();
+
     private BaseConverter converter;
-    private BaseListener listener;
-    private EventDatePicker events;
-    private BaseValidation validation;
+
+    private List<BaseListener> listeners=new ArrayList<>();
+
+    private List<eventsDatePicker> events =new ArrayList<>();
+
 
 }

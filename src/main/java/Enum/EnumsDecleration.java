@@ -3,9 +3,9 @@ package Enum;
 public class EnumsDecleration {
 
     public enum Direction{
-      RTL,
-      LTR,
-      AUTO
+      rtl,
+      ltr,
+      auto
     }
 
     public enum EventTypeTextField{
@@ -17,22 +17,22 @@ public class EnumsDecleration {
         ON_FOCUS_LOST
     }
     public enum EventPhase{
-       AFTER_UPDATE_MODEL,
-        BEFORE_UPDATE_MODEL
+       after_update_model,
+        before_update_model
     }
     public enum Environment{
-        SERVER,
-        CLIENT
+        server,
+        client
     }
     public enum NumberValidatorEnvironment {
-        SERVER,
-        CLIENT,
-        CLIENT_AND_SERVER
+        server,
+        client,
+        client_and_server
     }
     public enum Language{
-        INHERIT,
-        JAVASCRIPT,
-        SKIPPY
+        inherit,
+        javascript,
+        skippy
     }
 
     public enum EventTypeLabel{
@@ -75,10 +75,10 @@ public class EnumsDecleration {
     }
 
     public enum ColumnAlignment{
-        BEGIN,
-        CENTER,
-        FILL,
-        END
+        begin,
+        center,
+        fill,
+        end
     }
     public enum ColumnType{
         STRING,
@@ -167,9 +167,9 @@ public class EnumsDecleration {
 
     }
     public enum StaticComboboxEvent {
-        ON_LOAD,
-        ON_SELECTION_CHANGE,
-        ON_FOCUS_LOST
+        on_load,
+        on_selection_change,
+        on_focus_lost
     }
     public enum DynamicComboboxEvent{
         ON_LOAD,
@@ -202,10 +202,10 @@ public class EnumsDecleration {
         ON_REFRESH
     }
     public enum ListenerPhaseAction{
-        BEFORE_UPDATE_MODEL,
-        AFTER_UPDATE_MODEL,
-        BEFORE_FIRST_RENDER,
-        BEFORE_RENDER
+        before_update_model,
+        after_update_model,
+        before_first_render,
+        before_render
     }
     public  enum LookUpEventType{
         ON_LOAD,
@@ -224,9 +224,9 @@ public class EnumsDecleration {
 
     }
     public  enum DatePickerEventType{
-        ON_LOAD,
-        ON_SELECT,
-        ON_FOCUS_LOST
+        on_load,
+        on_select,
+        on_focus_lost
     }
 
 

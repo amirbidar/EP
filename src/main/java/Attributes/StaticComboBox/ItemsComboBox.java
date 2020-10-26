@@ -1,25 +1,16 @@
 package Attributes.StaticComboBox;
 
-import Base.BaseConverter;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import lombok.Data;
 
 import java.util.List;
 
 @Data
 public class ItemsComboBox {
-    private String itemValue;
-    private String variable;
+    private String value;
+    private String var;
     private String condition;
+    @JacksonXmlProperty(localName = "empty-item-label")
     private String emptyItemLabel;
-    List<Props> props;
-   @Data
-   class Props{
-       private String name;
-       private String label;
-       private String value;
-       private String icon;
-       private BaseConverter converter;
-
-
-   }
+    List<Props> item;
 }
