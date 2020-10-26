@@ -8,11 +8,9 @@ public class GeneralForm {
     private String label;
     private String title;
     private Integer version;
+    private String visible;
     private String clientLanguage;
     private String description;
-
-
-
 
 
 }

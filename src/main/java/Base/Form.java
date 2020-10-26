@@ -7,8 +7,10 @@ import lombok.Data;
 import java.util.List;
 @Data
 public class Form {
-    private LayoutForm layout;
+
     private GeneralForm general;
+    private ResourcesForm resources;
+    private LayoutForm layout;
     private PresentationForm presentation;
     private HiddnControls hiddenControls;
     private BaseListener listener;
