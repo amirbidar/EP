@@ -17,41 +17,32 @@ public class Main {
         }
     }
     private static String getXmlString() {
-        return "<radio-group value=\"#{thisisData&gt;Value}\" name=\"Radio49820\" enabled=\"true\" label=\"thisisGeneral&gt;Label\" layoutable=\"true\">\n" +
+        return "<checkbox-group name=\"Checkbox49878\" enabled=\"true\">\n" +
                 "            <layout>\n" +
-                "                <grid-layout number-of-columns=\"1\" margin-width=\"2\" margin-height=\"3\" horizontal-spacing=\"4\" vertical-spacing=\"5\" />\n" +
+                "                <grid-layout number-of-columns=\"2\" margin-width=\"5\" margin-height=\"5\" horizontal-spacing=\"5\" vertical-spacing=\"5\" />\n" +
                 "            </layout>\n" +
                 "            <layout-data>\n" +
-                "                <grid-layout-data row-span=\"2\" col-span=\"1\" v-grab=\"true\" h-grab=\"true\" v-alignment=\"begin\" h-alignment=\"begin\" v-hint=\"4\" h-hint=\"3\" />\n" +
+                "                <grid-layout-data row-span=\"1\" col-span=\"1\" v-grab=\"false\" h-grab=\"false\" v-alignment=\"center\" h-alignment=\"center\" />\n" +
                 "            </layout-data>\n" +
-                "            <validators>\n" +
-                "                <script-validator client-side-language=\"skippy\" script=\"#{thisisValidatio&gt;Script}\" error-message=\"thisisValidation&gt;ErrorMessage\" run-at=\"client\" />\n" +
-                "                <required-validator run-at=\"server\" />\n" +
-                "                <script-validator script=\"#{thisisValidation&gt;ScriptValidator&gt;Script}\" error-message=\"thisisValidation&gt;ScriptValidator&gt;ErrorMessage\" run-at=\"client_and_server\" phase=\"before_update_model\" />\n" +
-                "            </validators>\n" +
-                "            <events>\n" +
-                "                <on-load phase=\"after_update_model\" condition=\"1==1\" client-side-language=\"javascript\" action=\"#{thisisEvents&gt;Action}\" submit-region=\"Radio49820\" name=\"event_49821\" re-render=\"Radio49820\" fire-condition=\"#{thisisEvents&gt;Onload&gt;callBack&gt;Fire}\" before=\"#{thisisEvents&gt;Onload&gt;callBack&gt;Before}\" on-success=\"#{thisisEvents&gt;Onload&gt;callBack&gt;Success}\" run-at=\"server\">\n" +
-                "                    <argument name=\"arg1\" value=\"val1\" />\n" +
-                "                    <argument name=\"arg2\" value=\"val2\" />\n" +
-                "                </on-load>\n" +
-                "                <on-selection-change phase=\"before_update_model\" condition=\"1==1\" client-side-language=\"javascript\" action=\"#{thisisEvents&gt;OnSelectionChange&gt;Action}\" submit-region=\"Radio49820\" name=\"event_49822\" re-render=\"Radio49820\" fire-condition=\"#{thisisEvents&gt;OnSelectionChange&gt;callBack&gt;Fire}\" before=\"#{thisisEvents&gt;OnSelectionChange&gt;callBack&gt;Before}\" on-success=\"#{thisisEvents&gt;OnSelectionChange&gt;callBack&gt;Success}\" run-at=\"client\">\n" +
-                "                    <argument name=\"arg1\" value=\"val1\" />\n" +
-                "                    <argument name=\"arg2\" value=\"val2\" />\n" +
-                "                </on-selection-change>\n" +
-                "                <on-focus-lost phase=\"before_update_model\" condition=\"1==1\" client-side-language=\"javascript\" action=\"#{thisisEvents&gt;OnFocusLost&gt;Action}\" submit-region=\"Radio49820\" name=\"event_49823\" re-render=\"Radio49820\" fire-condition=\"#{thisisEvents&gt;OnFocusLost&gt;callBack&gt;Fire}\" before=\"#{thisisEvents&gt;OnFocusLost&gt;callBack&gt;Before}\" on-success=\"#{thisisEvents&gt;OnFocusLost&gt;callBack&gt;Success}\" run-at=\"server\">\n" +
-                "                    <argument name=\"arg1\" value=\"val1\" />\n" +
-                "                    <argument name=\"arg2\" value=\"val2\" />\n" +
-                "                </on-focus-lost>\n" +
-                "            </events>\n" +
-                "            <listeners>\n" +
-                "                <phase-listener phase=\"before_update_model\" action=\"#{thisisListeners&gt;BEFORE_UPDATE_MODEL&gt;Action}\" condition=\"1==1\" />\n" +
-                "                <phase-listener phase=\"after_update_model\" action=\"#{thisisListeners&gt;AFTER_UPDATE_MODEL&gt;Action}\" condition=\"1==1\" />\n" +
-                "                <phase-listener phase=\"before_first_render\" action=\"#{thisisListeners&gt;BEFORE_FIRST_RENDER&gt;Action}\" condition=\"1==1\" />\n" +
-                "                <phase-listener phase=\"before_render\" action=\"#{thisisListeners&gt;BEFORE_FIRST_RENDER&gt;Action}\" condition=\"1==1\" />\n" +
-                "            </listeners>\n" +
-                "            <items var=\"thisisData&gt;Variable\" value=\"thisisData&gt;ItemsValue\" condition=\"1==1\"></items>\n" +
-                "            <converter factory=\"thisisConvertor&gt;Factory\" to-value=\"thisisConvertor&gt;ToValue\" to-object=\"thisisConvertor&gt;ToObject\" avoid-null-values=\"true\" />\n" +
-                "        </radio-group>";
+                "            <validators></validators>\n" +
+                "            <events></events>\n" +
+                "            <items>\n" +
+                "                <checkbox selected=\"false\" name=\"checkItem49879\" enabled=\"true\">\n" +
+                "                    <layout-data>\n" +
+                "                        <grid-layout-data row-span=\"1\" col-span=\"1\" v-grab=\"false\" h-grab=\"false\" v-alignment=\"begin\" h-alignment=\"begin\" />\n" +
+                "                    </layout-data>\n" +
+                "                    <validators></validators>\n" +
+                "                    <events></events>\n" +
+                "                </checkbox>\n" +
+                "                <checkbox selected=\"false\" name=\"checkItem49916\" enabled=\"true\">\n" +
+                "                    <layout-data>\n" +
+                "                        <grid-layout-data row-span=\"1\" col-span=\"1\" v-grab=\"false\" h-grab=\"false\" v-alignment=\"begin\" h-alignment=\"begin\" />\n" +
+                "                    </layout-data>\n" +
+                "                    <validators></validators>\n" +
+                "                    <events></events>\n" +
+                "                </checkbox>\n" +
+                "            </items>\n" +
+                "        </checkbox-group>";
     }
 }
 
