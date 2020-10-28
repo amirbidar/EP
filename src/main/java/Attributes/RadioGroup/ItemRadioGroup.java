@@ -1,14 +1,11 @@
-package Attributes.EditableTable.CellEditorComponents;
+package Attributes.RadioGroup;
 
 import lombok.Data;
 
 @Data
-public class Items {
+public class ItemRadioGroup {
     public String condition;
     public String var;
-    public Object checkbox;
     public String value;
 
-
 }
-
