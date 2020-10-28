@@ -10,7 +10,7 @@ import lombok.Data;
 @Data
 public class Upload {
     private GeneralUpload general;
-    private BaseLayoutData layoutData;
+    private LayoutData layoutData;
     private BasePresentation presentation;
     private DataUpload data;
     private BaseConverter converter;

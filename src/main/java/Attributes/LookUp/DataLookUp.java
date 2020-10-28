@@ -2,8 +2,12 @@ package Attributes.LookUp;
 
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 public class DataLookUp {
-    private Boolean enableSort;
-    private Integer defaultPageSize;
+    public String condition;
+    public String var;
+    public String value;
+    public List<Entity> entity;
 }

@@ -1,8 +1,6 @@
 package Widgets;
 
-import Attributes.Frame.EventFrame;
 import Attributes.Frame.events;
-import Attributes.Link.EventLink;
 import Base.*;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import lombok.Data;
@@ -23,7 +21,7 @@ public class Label {
      private String value;
 
      @JacksonXmlProperty(localName = "layout-data")
-     private BaseLayoutData layoutData;
+     private LayoutData layoutData;
 
      private BaseListener listeners;
 

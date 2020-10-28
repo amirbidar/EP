@@ -4,11 +4,10 @@ import Base.BaseData;
 import lombok.Data;
 
 @Data
-public class DataEditableTable extends BaseData {
-
-    private String factory;
-    private Integer maximumRows;
-    private String findExpression;
-    private String deleteExpression;
+public class DataEditableTable {
+    public String condition;
+    public String var;
+    public String value;
+    public EntityEditableGrid entity;
 
 }

@@ -10,7 +10,7 @@ import lombok.Data;
 @Data
 public class PasswordField {
     private GeneralPasswordField general;
-    private BaseLayoutData layoutData;
+    private LayoutData layoutData;
     private PresentationPasswordField presentation;
     private DataPasswordField data;
     private BaseConverter converter;

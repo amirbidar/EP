@@ -55,23 +55,23 @@ public class EnumsDecleration {
     }
 
     public enum TableSelectionMode{
-        SINGLE,
-        MULTIPLE
+        single,
+        multiple
     }
 
 
     public enum EventTypeTable{
-        ON_LOAD,
-        ON_DOUBLE_CLICK,
-        ON_SORT,
-        ON_NEXT,
-        ON_PREVIOUS,
-        ON_REFRESH,
-        ON_FIRST,
-        ON_LAST,
-        ON_ROW_ACTION,
-        ON_CLICK,
-        ON_FOCUS_LOST
+        on_load,
+        on_double_click,
+        on_sort,
+        on_next,
+        on_previous,
+        on_refresh,
+        on_first,
+        on_last,
+        on_row_action,
+        on_click,
+        on_focus_lost
     }
 
     public enum ColumnAlignment{

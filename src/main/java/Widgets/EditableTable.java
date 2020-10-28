@@ -12,7 +12,7 @@ import java.util.List;
 @Data
 public class EditableTable {
     private GeneralEditableTable general;
-    private BaseLayoutData layoutData;
+    private LayoutData layoutData;
     private PresentationEditableTable presentation;
     private DataEditableTable data;
     private List<EditableColumn> columnOrder;

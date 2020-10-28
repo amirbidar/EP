@@ -9,7 +9,7 @@ import lombok.Data;
 @Data
 public class TextArea {
     private GeneralTextArea general;
-    private BaseLayoutData layoutData;
+    private LayoutData layoutData;
     private BasePresentation presentation;
     private DataTextArea data;
     private BaseConverter converter;

@@ -20,7 +20,7 @@ public class DatePicker {
     private String label;
     private Boolean layoutable;
     @JacksonXmlProperty(localName = "layout-data")
-    private BaseLayoutData baseLayoutData;
+    private LayoutData layoutData;
 
     private List<Validations> validators =new ArrayList<>();
 

@@ -1,12 +1,12 @@
 package Base;
-import Enum.*;
-import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+import Base.Validationss.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 @Data
 public class Validations {
 
-    @JacksonXmlProperty(localName = "run-at")
+   /* @JacksonXmlProperty(localName = "run-at")
     private EnumsDecleration.NumberValidatorEnvironment environment;
     @JacksonXmlProperty(localName = "client-side-language")
     private EnumsDecleration.Language language;
@@ -33,6 +33,21 @@ public class Validations {
     private Integer minimumLength;
     @JacksonXmlProperty(localName = "maximum-length")
     private Integer maximumLength;
+    @JacksonXmlProperty(localName = "minimum-selection")
+    private Integer minimumSelection;
+    @JacksonXmlProperty(localName = "maximum-selection")
+    private Integer maximumSelection;*/
+
+    @JsonProperty("required-validator")
+    public RequiredValidator requiredValidator;
+    @JsonProperty("email-validator")
+    public EmailValidator emailValidator;
+    @JsonProperty("number-validator")
+    public NumberValidator numberValidator;
+    @JsonProperty("string-validator")
+    public StringValidator stringValidator;
+    @JsonProperty("script-validator")
+    public ScriptValidator scriptValidator;
 
 
    /* @JacksonXmlProperty(localName = "script-validator")

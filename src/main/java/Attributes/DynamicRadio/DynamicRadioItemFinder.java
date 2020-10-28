@@ -14,7 +14,7 @@ public class DynamicRadioItemFinder {
     private BaseValidation validators;
     private BaseListener listener;
     private BaseConverter converter;
-    private BaseLayoutData layoutData;
+    private LayoutData layoutData;
 
     @Data
     class DynamicRadioItemFinderGeneral{

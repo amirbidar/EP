@@ -24,7 +24,7 @@ public class EditorEditableColumn {
             editortypes.add(new TextArea());
             editortypes.add(new PasswordField());
             editortypes.add(new DatePicker());
-            editortypes.add(new ComboBox());
+            editortypes.add(new dropdown());
             editortypes.add(new Checkbox());
             editortypes.add(new DynamicCombobox());
             editortypes.add(new DynamicCheckbox());

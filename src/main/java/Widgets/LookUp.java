@@ -2,13 +2,12 @@ package Widgets;
 
 import Attributes.LookUp.*;
 import Base.*;
-import javafx.scene.control.Pagination;
 import lombok.Data;
 
 @Data
 public class LookUp {
     private GeneralLookUp general;
-    private BaseLayoutData layoutData;
+    private LayoutData layoutData;
     private PresentationLookUp presentation;
     private BaseEntities enitites;
     private DataLookUp data;

@@ -1,9 +1,6 @@
 package Widgets;
 
-import Attributes.Currency.EventCurrency;
 import Attributes.Frame.events;
-import Attributes.TextField.DataTextField;
-import Attributes.TextField.GeneralTextField;
 import Base.*;
 import Enum.*;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
@@ -29,7 +26,7 @@ public class TextField {
     private Boolean readonly;
     private Boolean layoutable;
     @JacksonXmlProperty(localName = "layout-data")
-    private BaseLayoutData baseLayoutData;
+    private LayoutData layoutData;
 
     private BaseConverter converter;
 

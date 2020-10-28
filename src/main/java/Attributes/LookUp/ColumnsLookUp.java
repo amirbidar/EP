@@ -4,12 +4,12 @@ import lombok.Data;
 
 @Data
 public class ColumnsLookUp  {
-    private String name;
-    private String headr;
-    private String type;
-    private Integer width;
-    private String icon;
-    private Boolean sortable;
-    private String Alignment;
+    public String name;
+    public String icon;
+    public int width;
+    public String header;
+    public boolean sortable;
+    public String alignment;
+    public String type;
 
 }

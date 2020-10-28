@@ -11,7 +11,7 @@ public class FormChildren {
         private CheckboxGroup checkboxGroup;
         private CheckboxItem checkboxItem;
         private Column column;
-        private ComboBox comboBox;
+        private dropdown dropdown;
         private Composite composite;
         private Currency currency;
         private DatePicker datePicker;
@@ -34,7 +34,7 @@ public class FormChildren {
         private StaticList  staticList;
         private TabFolder tabFolder;
         private TabItem tabItem;
-        private Table table;
+        private grid grid;
         private TextArea textArea;
         private TextField textField;
         private TransitionCombo transitionCombo;
