@@ -15,47 +15,47 @@ import java.awt.*;
 import java.util.List;
 @Data
 public class  Children {
-    public Form form;
-    public Button button;
-    public Captcha captcha;
+    public List<Form> form;
+    public List<Button> button;
+    public List<Captcha> captcha;
     @JsonProperty("checkbox-group")
-    public CheckBoxGroup checkBoxGroup;
+    public List<CheckBoxGroup> checkBoxGroup;
     @JsonProperty("composite")
-    public Composite composite;
+    public List<Composite> composite;
     @JsonProperty("checkbox")
-    public CheckBoxItem checkBoxItem;
-    public Currency currency;
+    public List<CheckBoxItem> checkBoxItem;
+    public List<Currency> currency;
     @JsonProperty("datepicker")
-    public DatePicker datePicker;
-    public DynamicComboBox dropdown;
+    public List<DatePicker> datePicker;
+    public List<DynamicComboBox> dropdown;
     @JsonProperty("dynamic-widget")
-    public DynamicWidget dynamicWidget;
+    public List<DynamicWidget> dynamicWidget;
     @JsonProperty("editable-grid")
-    public EditableGrid editableGrid;
+    public List<EditableGrid> editableGrid;
     @JsonProperty("file-upload")
-    public FileUpload fileUpload;
-    public Frame frame;
-    public Grid grid;
-    public Image image ;
-    public Label label;
-    public Link link;
-    public Lookup lookup;
+    public List<FileUpload> fileUpload;
+    public List<Frame> frame;
+    public List<Grid> grid;
+    public List<Image> image ;
+    public List<Label> label;
+    public List<Link> link;
+    public List<Lookup> lookup;
     @JsonProperty("password-field")
-    public PasswordField passwordField;
+    public List<PasswordField> passwordField;
     @JsonProperty("radio-group")
-    public RadioGroup radioGroup;
+    public List<RadioGroup> radioGroup;
     @JsonProperty("radio")
-    public RadioItem radioItem;
-    public StaticList list;
+    public List<RadioItem> radioItem;
+    public List<StaticList> list;
     @JsonProperty("tab-folder")
-    public TabFolder tabFolder;
+    public List<TabFolder> tabFolder;
     //public TaskComment taskComment;
     @JsonProperty("textarea")
-    public Textarea textArea;
+    public List<Textarea> textArea;
     @JsonProperty("textfield")
-    public TextField textField;
+    public List<TextField> textField;
   //  public TransitionCombo transitionCombo;
-    public Tree tree;
+    public List<Tree> tree;
     public List<Hidden> hidden;
 
 // TODO: 10/28/2020 write all widgets
