@@ -1,12 +1,11 @@
 package Base;
 
-import Widgets.*;
 import lombok.Data;
 
 @Data
 public class FormChildren {
 //all widget
-        private Button button;
+      /*  private Button button;
         private Captcha captcha;
         private CheckboxGroup checkboxGroup;
         private CheckboxItem checkboxItem;
@@ -41,5 +40,5 @@ public class FormChildren {
         private Tree tree;
         private Upload upload;
         private TaskComment taskComment;
-
+*/
 }

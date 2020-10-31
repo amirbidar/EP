@@ -1,11 +1,9 @@
 package WidgetJson;
 
-import Attributes.EditableTable.ColumnEditableTable;
 import Attributes.EditableTable.ColumnsEditableTable;
 import Attributes.EditableTable.DataEditableTable;
 import Attributes.Label.Listeners;
 import Base.BaseConverter;
-import Base.BaseValidation;
 import Base.EventAll;
 import Base.LayoutData;
 import com.fasterxml.jackson.annotation.JsonProperty;

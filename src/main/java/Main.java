@@ -1,5 +1,4 @@
-import Widgets.dropdown;
-import Widgets.grid;
+
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import org.json.JSONObject;
 import org.json.XML;
@@ -17,32 +16,107 @@ public class Main {
         }
     }
     private static String getXmlString() {
-        return "<checkbox-group name=\"Checkbox49878\" enabled=\"true\">\n" +
-                "            <layout>\n" +
-                "                <grid-layout number-of-columns=\"2\" margin-width=\"5\" margin-height=\"5\" horizontal-spacing=\"5\" vertical-spacing=\"5\" />\n" +
-                "            </layout>\n" +
-                "            <layout-data>\n" +
-                "                <grid-layout-data row-span=\"1\" col-span=\"1\" v-grab=\"false\" h-grab=\"false\" v-alignment=\"center\" h-alignment=\"center\" />\n" +
-                "            </layout-data>\n" +
-                "            <validators></validators>\n" +
-                "            <events></events>\n" +
-                "            <items>\n" +
-                "                <checkbox selected=\"false\" name=\"checkItem49879\" enabled=\"true\">\n" +
-                "                    <layout-data>\n" +
-                "                        <grid-layout-data row-span=\"1\" col-span=\"1\" v-grab=\"false\" h-grab=\"false\" v-alignment=\"begin\" h-alignment=\"begin\" />\n" +
-                "                    </layout-data>\n" +
-                "                    <validators></validators>\n" +
-                "                    <events></events>\n" +
-                "                </checkbox>\n" +
-                "                <checkbox selected=\"false\" name=\"checkItem49916\" enabled=\"true\">\n" +
-                "                    <layout-data>\n" +
-                "                        <grid-layout-data row-span=\"1\" col-span=\"1\" v-grab=\"false\" h-grab=\"false\" v-alignment=\"begin\" h-alignment=\"begin\" />\n" +
-                "                    </layout-data>\n" +
-                "                    <validators></validators>\n" +
-                "                    <events></events>\n" +
-                "                </checkbox>\n" +
-                "            </items>\n" +
-                "        </checkbox-group>";
+        return "\t<frame \n" +
+                "\t\t\turl= \"asdasdasds\" \t\t\t\n" +
+                "\t\t\n" +
+                " name= \"Sasdasda\" \t\t enabled= \"true\" \t\t label= \"asdasdasdas\" \t layoutable= \"true\" \n" +
+                "\t\t>\n" +
+                "\t<layout-data>\n" +
+                "\t\t<grid-layout-data\n" +
+                "\t\t\t\n" +
+                "\t\t\t\trow-span=\"1\" \n" +
+                "\t\t\t\n" +
+                "\t\t\t\n" +
+                "\t\t\tcol-span=\"1\" \n" +
+                "\t\t\t\n" +
+                "\t\t\t\n" +
+                "\t\t\tv-grab=\"true\" \n" +
+                "\t\t\t\t\n" +
+                "\t\t\t\n" +
+                "\t\t\th-grab=\"true\" \n" +
+                "\t\t\t\t\t\n" +
+                "\t\t\t\n" +
+                "\t\t\tv-alignment=\"center\" \n" +
+                "\t\t\t\n" +
+                "\t\t\t\n" +
+                "\t\t\th-alignment=\"center\"\n" +
+                "\t\t\t \n" +
+                "\t\t\t\n" +
+                "\t\t\t \n" +
+                "\t\t\t/>\n" +
+                "\t</layout-data>\n" +
+                "\n" +
+                "\t\t\n" +
+                "\t   \t\t<events>\n" +
+                "   \t\t\t\n" +
+                "   \t\t\t\t\n" +
+                "\t\n" +
+                "\t <on-focus-lost\n" +
+                "\t\n" +
+                "\t\n" +
+                "\t\n" +
+                "\t\tphase=\"after_update_model\"\n" +
+                "\t\n" +
+                "\tcondition=\"asdasd\" \n" +
+                "\tclient-side-language= \"inherit\"\n" +
+                "\taction=\"#{asdasdas}\"\n" +
+                "\t  submit-region=\"asdasd\"\n" +
+                "\tname=\"event_3052\" \n" +
+                "\tre-render=\"asdasd\" \n" +
+                "\tfire-condition=\"asdasd\" \n" +
+                "\tbefore=\"asdasdas\" \n" +
+                "\ton-success=\"asdasd\" \n" +
+                "\trun-at= \"server\"\n" +
+                "\t>\n" +
+                "\n" +
+                "\t\n" +
+                "\t\n" +
+                "\t\t<argument name=\"asdasd\" value=\"asdasd\"/>\n" +
+                "\t\n" +
+                "\t\t<argument name=\"fdasfdf\" value=\"dfgdfbfd\"/>\n" +
+                "\t\n" +
+                "\t\n" +
+                "\t </on-focus-lost>\n" +
+                "\t\n" +
+                "\t \n" +
+                "\n" +
+                "   \t\t\t\n" +
+                "   \t\t\t\t\n" +
+                "\t\n" +
+                "\t <on-load\n" +
+                "\t\n" +
+                "\t\n" +
+                "\t\n" +
+                "\t\tphase=\"after_update_model\"\n" +
+                "\t\n" +
+                "\tcondition=\"asdasd\" \n" +
+                "\tclient-side-language= \"inherit\"\n" +
+                "\taction=\"#{asdasdasds}\"\n" +
+                "\t  submit-region=\"asdasd\"\n" +
+                "\tname=\"event_3053\" \n" +
+                "\tre-render=\"asdasd\" \n" +
+                "\tfire-condition=\"asdasd\" \n" +
+                "\tbefore=\"asdasdasd\" \n" +
+                "\ton-success=\"dasdasd\" \n" +
+                "\trun-at= \"server\"\n" +
+                "\t>\n" +
+                "\n" +
+                "\t\n" +
+                "\t\n" +
+                "\t\t<argument name=\"asd\" value=\"asd\"/>\n" +
+                "\t\n" +
+                "\t\t<argument name=\"asd\" value=\"asdasd\"/>\n" +
+                "\t\n" +
+                "\t\n" +
+                "\t </on-load>\n" +
+                "\t\n" +
+                "\t \n" +
+                "\n" +
+                "   \t\t\t\n" +
+                "   \t\t\t</events>\n" +
+                "   \t\t\n" +
+                "\t\t</frame>\n" +
+                "\t\t";
     }
 }
 

@@ -1,8 +1,5 @@
 package Attributes.EditableColumn;
 
-import Widgets.*;
-import Widgets.TextArea;
-import Widgets.TextField;
 import lombok.Setter;
 
 import java.awt.*;
@@ -11,7 +8,7 @@ import java.util.List;
 @Setter
 public class EditorEditableColumn {
 
-        public String type;
+      /*  public String type;
 
         public String getType() {
             return type;
@@ -37,6 +34,6 @@ public class EditorEditableColumn {
             }
             return main;
 
-        }
+        }*/
 
 }

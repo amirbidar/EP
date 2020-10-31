@@ -1,30 +1,29 @@
 package WidgetJson;
 
-import Attributes.DatePicker.DatePickerValidators;
 import Attributes.Label.Listeners;
-import Base.BaseConverter;
 import Base.EventAll;
-import Enum.*;
 import Base.LayoutData;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 @Data
-public class DatePicker {
+public class Currency {
+    public Listeners listeners;
     public Boolean layoutable;
+    public String validators;
+    public Integer rates;
     public String tooltip;
+    @JsonProperty("max-length")
+    public int maxLength;
+    public String main;
+    @JsonProperty("default-widget")
+    public Boolean defaultWidget;
     public String label;
     public Boolean enabled;
-    public String mode;
+    @JsonProperty("layout-data")
+    public LayoutData layoutData;
     public Boolean readonly;
-    public EnumsDecleration.DatePickerCalenderMode calendarMode;
     public String name;
     public String value;
-    public Listeners listeners;
     public EventAll events;
-    public DatePickerValidators validators;
-    public BaseConverter converter;
-    @JsonProperty("layout-data")
-    private LayoutData layoutData;
-
 }

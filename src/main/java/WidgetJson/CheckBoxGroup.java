@@ -1,6 +1,9 @@
 package WidgetJson;
 
+import Attributes.CheckBoxGroup.ItemCheckBoxGroup;
 import Attributes.EditableTable.CellEditorComponents.Layout;
+import Base.LayoutData;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 @Data
@@ -10,7 +13,7 @@ public class CheckBoxGroup {
     public LayoutData layoutData;
     public String validators;
     public String name;
-    public Items items;
-    public boolean enabled;
+    public ItemCheckBoxGroup items;
+    public Boolean enabled;
     public String events;
 }
