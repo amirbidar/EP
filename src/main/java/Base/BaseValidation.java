@@ -19,5 +19,6 @@ public class BaseValidation {
     public StringValidator stringValidator;
     @JsonProperty("script-validator")
     public ScriptValidator scriptValidator;
-
+    @JsonProperty("selection-validator")
+    public SelectionValidation selectionValidation;
 }

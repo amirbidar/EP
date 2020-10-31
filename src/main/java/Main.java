@@ -1,6 +1,7 @@
 
 import Base.Form;
 import WidgetJson.FormBase;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
@@ -11,568 +12,86 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            ObjectMapper objectMapper = new ObjectMapper ();
+            ObjectMapper objectMapper = new ObjectMapper().enable(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY);
             JSONObject xmlJSONObj = XML.toJSONObject(getXmlString());
+/*
             FormBase pojo = objectMapper.readValue(xmlJSONObj.toString(), FormBase.class);
-            System.out.println(pojo.toString());
+*/
+            System.out.println(objectMapper.readValue(xmlJSONObj.toString(),FormBase.class));
         } catch(Exception e) {
             e.printStackTrace();
         }
     }
     private static String getXmlString() {
         return "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
-                "\t   \t\t\t<form xmlns=\"http://www.itorbit.net/goofy/v2/form-definition\"\n" +
-                "\t\t\t\txmlns:xsd=\"http://www.w3.org/2001/XMLSchema-instance\"\n" +
-                "\t   \t\t\tname=\"TestForm2\"\n" +
-                "\t   \t\t\tclient-side-language=\"skippy\"\n" +
-                "\t   \t\t\ttitle=\"TestForm2\" \t   \t\t\t\n" +
-                "\t   \t\t\tvisible=\"false\" \t   \t\t\tlayoutable=\"true\" \t   \t\t\tenabled=\"true\" \t   \t\t\trendered=\"true\" \t   \t\t\t\t   \t\t\t\t   \t\t\t\t   \t\t\t\t   \t\t\t\t   \t\t\tresizable=\"false\" \t   \t\t\tdraggable=\"true\" \t   \t\t\t\n" +
-                "\t   \t\t\tversion=\"1\" \n" +
-                "\t   \t\t\t>\n" +
-                "\n" +
-                "\t\t\t\t<resources>\n" +
-                "\t\t\t\t\t<glossary name=\"MyReports\"/>\n" +
-                "\t\t\t\t</resources>\n" +
-                "\n" +
-                "\t\t\t\t\n" +
-                "\t\t\t\t\n" +
-                "\t\t\t\t\n" +
-                "\t\t\t\t\n" +
-                "\t\t\t\t\n" +
-                "\n" +
-                "\t\t\t\t\n" +
-                "\n" +
-                "\t\t\t\t\n" +
-                "\n" +
-                "\t\t\t\t\n" +
-                "\t<layout>\n" +
-                "\t   \t\t<grid-layout \n" +
-                "\t   \t\tnumber-of-columns=\"1\" margin-width=\"0\" margin-height=\"0\" horizontal-spacing=\"0\" vertical-spacing=\"0\"\n" +
-                "\t   \t\t/>\n" +
-                "\t</layout>\n" +
-                "\n" +
-                "\t\t\t\t\t\n" +
-                "\t\t\t\t\n" +
-                "\t\t\t\t<children>\n" +
-                "\t\t\t  \t\n" +
-                "\t\t\t\t\t\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\t\n" +
-                "\t\t\n" +
-                "\t\t\n" +
-                "\n" +
-                "\t\t\n" +
-                "\n" +
-                "\t\t\n" +
-                "\n" +
-                "\t\n" +
-                "\t\t\t\t  \t\t\t\n" +
-                "\t\n" +
-                "\t\t\n" +
-                "\t<textfield\n" +
-                "\t\t\n" +
-                "\t\t\tvalue= \"value\" \t\t\t\n" +
-                "\t\t\n" +
-                "\t\t\n" +
-                "\t\t\treadonly= \"true\" \t\t\t\n" +
-                "\t\t\n" +
-                "\t\t\n" +
-                "\t\t\tdefault-widget= \"true\" \t\t\t\n" +
-                "\t\t\n" +
-                "\t\t\n" +
-                "\t\t\ttooltip= \"tooltip\" \t\t\t\n" +
-                "\t\t\n" +
-                "\t\t\n" +
-                "\t\t\tmax-length= \"20\" \t\t\t\n" +
-                "\t\t\n" +
-                "\t\tdirection= \"rtl\" \t\t\t\n" +
-                "\t\tformatNumber= \"true\"\n" +
-                "\t\t\n" +
-                " name= \"TextField_3652\" \t\t enabled= \"true\" \t\t label= \"label\" \t layoutable= \"true\" \n" +
-                "\t\t>\n" +
-                "\n" +
-                "\t<layout-data>\n" +
-                "\t\t<grid-layout-data\n" +
-                "\t\t\t\n" +
-                "\t\t\t\trow-span=\"19\" \n" +
-                "\t\t\t\n" +
-                "\t\t\t\n" +
-                "\t\t\tcol-span=\"16\" \n" +
-                "\t\t\t\n" +
-                "\t\t\t\n" +
-                "\t\t\tv-grab=\"true\" \n" +
-                "\t\t\t\t\n" +
-                "\t\t\t\n" +
-                "\t\t\th-grab=\"true\" \n" +
-                "\t\t\t\t\t\n" +
-                "\t\t\t\n" +
-                "\t\t\tv-alignment=\"begin\" \n" +
-                "\t\t\t\n" +
-                "\t\t\t\n" +
-                "\t\t\th-alignment=\"fill\"\n" +
-                "\t\t\t \n" +
-                "\t\t\t\n" +
-                "\t\t\t \n" +
-                "\t\t\t/>\n" +
-                "\t</layout-data>\n" +
-                "\n" +
-                "\t\t\n" +
-                "\t\t\n" +
-                "\t\t<validators>\n" +
-                "\t\t\n" +
-                "\t\t\t\n" +
-                "\t\n" +
-                "\t<script-validator \n" +
-                "\t\t\n" +
-                "\t\tscript=\"Script\"\n" +
-                "\t\terror-message=\"error\" \n" +
-                "\t\trun-at= \"server\"\n" +
-                "\t\t\n" +
-                "\t/>\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\t\t\n" +
-                "\t\t\t\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t<required-validator \n" +
-                "\t\trun-at= \"server\"\n" +
-                "\t/>\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\t\t\n" +
-                "\t\t\t\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\t<number-validator \n" +
-                "\t\tinteger=\"true\"\n" +
-                "\t\tminimum-value=\"10\" \n" +
-                "\t\tmaximum-value=\"20\" \n" +
-                "\t\tinclude-minimum-boundry=\"true\"\n" +
-                "\t\tinclude-maximum-boundry=\"true\"\n" +
-                "\t\trun-at= \"server\"\n" +
-                "\t/>\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\t\t\n" +
-                "\t\t\t\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\t<string-validator \n" +
-                "\t\tregular-expression=\"regex\" \n" +
-                "\t\tregular-expression-error-message=\"errorregex\" \n" +
-                "\t\tminimum-length=\"10\" \n" +
-                "\t\tmaximum-length=\"20\" \n" +
-                "\t\trun-at= \"client\"\n" +
-                "\t/>\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\t\t\n" +
-                "\t\t\t\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\t<email-validator \n" +
-                "\t\trun-at= \"client_and_server\"\n" +
-                "\t/>\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\t\t\n" +
-                "\t\t</validators>\n" +
-                "\t\t\n" +
-                "\t\t\n" +
-                "\t\t<events>\n" +
-                "\t\t\n" +
-                "\t\t\t\n" +
-                "\t\n" +
-                "\t <on-load\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\tphase=\"after_update_model\"\n" +
-                "\t\n" +
-                "\tcondition=\"condition\" \n" +
-                "\tclient-side-language= \"inherit\"\n" +
-                "\taction=\"#{action}\"\n" +
-                "\t  submit-region=\"region\"\n" +
-                "\tname=\"event_3673\" \n" +
-                "\tre-render=\"render\" \n" +
-                "\tfire-condition=\"fire\" \n" +
-                "\tbefore=\"before\" \n" +
-                "\ton-success=\"success\" \n" +
-                "\trun-at= \"server\"\n" +
-                "\t>\n" +
-                "\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\t<argument name=\"asdsad\" value=\"asdas\"/>\n" +
-                "\t\n" +
-                "\t\t<argument name=\"asdasd\" value=\"cdcdcd\"/>\n" +
-                "\t\n" +
-                "\t\t<argument name=\"asdasd\" value=\"fgfbgb\"/>\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t </on-load>\n" +
-                "\t\n" +
-                "\t \n" +
-                "\n" +
-                "\t\t\n" +
-                "\t\t\t\n" +
-                "\t\n" +
-                "\t <on-change \n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\tphase=\"after_update_model\"\n" +
-                "\t\n" +
-                "\tcondition=\"condition\t\" \n" +
-                "\tclient-side-language= \"skippy\"\n" +
-                "\taction=\"#{asdasdasdasdasd}\"\n" +
-                "\t  submit-region=\"region\"\n" +
-                "\tname=\"event_3674\" \n" +
-                "\tre-render=\"render\" \n" +
-                "\tfire-condition=\"fire\" \n" +
-                "\tbefore=\"before\" \n" +
-                "\ton-success=\"success\" \n" +
-                "\trun-at= \"server\"\n" +
-                "\t>\n" +
-                "\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\t<argument name=\"amir\" value=\"amir\"/>\n" +
-                "\t\n" +
-                "\t\t<argument name=\"amir\" value=\"asdasdasdasda\"/>\n" +
-                "\t\n" +
-                "\t\t<argument name=\"asdasdasdasda\" value=\"asdasdasdasda\"/>\n" +
-                "\t\n" +
-                "\t\t<argument name=\"asdasdasdasda\" value=\"asdasdasdasda\"/>\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t </on-change> \n" +
-                "\t\n" +
-                "\t \n" +
-                "\n" +
-                "\t\t\n" +
-                "\t\t\t\n" +
-                "\t\n" +
-                "\t <on-edit\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\tphase=\"after_update_model\"\n" +
-                "\t\n" +
-                "\tcondition=\"asdasdasdasda\" \n" +
-                "\tclient-side-language= \"inherit\"\n" +
-                "\taction=\"#{asdasdasdasda}\"\n" +
-                "\t  submit-region=\"region\"\n" +
-                "\tname=\"event_3675\" \n" +
-                "\tre-render=\"render\" \n" +
-                "\tfire-condition=\"asdasdasdasda\" \n" +
-                "\tbefore=\"asdasdasdasda\" \n" +
-                "\ton-success=\"asdasdasdasda\" \n" +
-                "\trun-at= \"server\"\n" +
-                "\t>\n" +
-                "\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\t<argument name=\"asdasdasdasda\" value=\"asdasdasdasda\"/>\n" +
-                "\t\n" +
-                "\t\t<argument name=\"asdasdasdasda\" value=\"asdasdasdasda\"/>\n" +
-                "\t\n" +
-                "\t\t<argument name=\"asdasdasdasda\" value=\"asdasdasdasda\"/>\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t </on-edit>\n" +
-                "\t\n" +
-                "\t \n" +
-                "\n" +
-                "\t\t\n" +
-                "\t\t\t\n" +
-                "\t\n" +
-                "\t <on-select \n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\tphase=\"after_update_model\"\n" +
-                "\t\n" +
-                "\t\n" +
-                "\tclient-side-language= \"inherit\"\n" +
-                "\taction=\"#{action}\"\n" +
-                "\t  submit-region=\"region\"\n" +
-                "\tname=\"event_3676\" \n" +
-                "\tre-render=\"render\" \n" +
-                "\tfire-condition=\"fire\" \n" +
-                "\tbefore=\"asdasdasdasda\" \n" +
-                "\ton-success=\"success\" \n" +
-                "\trun-at= \"server\"\n" +
-                "\t>\n" +
-                "\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\t<argument name=\"asdsad\" value=\"vdvdf\"/>\n" +
-                "\t\n" +
-                "\t\t<argument name=\"asdsa\" value=\"gfdgsd\"/>\n" +
-                "\t\n" +
-                "\t\t<argument name=\" acasc\" value=\"sadasdas\"/>\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t </on-select> \n" +
-                "\t\n" +
-                "\t \n" +
-                "\n" +
-                "\t\t\n" +
-                "\t\t\t\n" +
-                "\t\n" +
-                "\t <on-deselect \n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\tphase=\"after_update_model\"\n" +
-                "\t\n" +
-                "\tcondition=\"condition\" \n" +
-                "\tclient-side-language= \"inherit\"\n" +
-                "\taction=\"#{action}\"\n" +
-                "\t  submit-region=\"region\"\n" +
-                "\tname=\"event_3677\" \n" +
-                "\tre-render=\"render\" \n" +
-                "\tfire-condition=\"fire\" \n" +
-                "\tbefore=\"before\" \n" +
-                "\ton-success=\"success\" \n" +
-                "\trun-at= \"server\"\n" +
-                "\t>\n" +
-                "\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\t<argument name=\"amir\" value=\"bidar\"/>\n" +
-                "\t\n" +
-                "\t\t<argument name=\"amir\" value=\"bidar\"/>\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t </on-deselect> \n" +
-                "\t\n" +
-                "\t \n" +
-                "\n" +
-                "\t\t\n" +
-                "\t\t\t\n" +
-                "\t\n" +
-                "\t <on-focus-lost\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\tphase=\"after_update_model\"\n" +
-                "\t\n" +
-                "\tcondition=\"condition\" \n" +
-                "\tclient-side-language= \"inherit\"\n" +
-                "\taction=\"#{sdsdaasdasdas}\"\n" +
-                "\t  submit-region=\"region\"\n" +
-                "\tname=\"event_3678\" \n" +
-                "\tre-render=\"render\" \n" +
-                "\tfire-condition=\"fire\" \n" +
-                "\tbefore=\"before\" \n" +
-                "\ton-success=\"success\" \n" +
-                "\trun-at= \"server\"\n" +
-                "\t>\n" +
-                "\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\t<argument name=\"amir\" value=\"bidar\"/>\n" +
-                "\t\n" +
-                "\t\t<argument name=\"bidar\" value=\"amir\"/>\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t </on-focus-lost>\n" +
-                "\t\n" +
-                "\t \n" +
-                "\n" +
-                "\t\t\n" +
-                "\t\t</events>\n" +
-                "\n" +
-                "\t\t\n" +
-                "\t   \t\t<listeners>\n" +
-                "\t   \t\t\n" +
-                "\t   \t\t\t\n" +
-                "\t\n" +
-                "\t\t<phase-listener\n" +
-                "\t\tphase=\"before_update_model\"\n" +
-                "\t\taction=\"#{asdasdasdasda}\"\n" +
-                "\t\tcondition=\"thiscondition\" \t\t/>\n" +
-                "\n" +
-                "\t   \t\t\n" +
-                "\t   \t\t\t\n" +
-                "\t\n" +
-                "\t\t<phase-listener\n" +
-                "\t\tphase=\"after_update_model\"\n" +
-                "\t\taction=\"#{asdasdasdasda}\"\n" +
-                "\t\tcondition=\"thiscondition\" \t\t/>\n" +
-                "\n" +
-                "\t   \t\t\n" +
-                "\t   \t\t\t\n" +
-                "\t\n" +
-                "\t\t<phase-listener\n" +
-                "\t\tphase=\"before_first_render\"\n" +
-                "\t\taction=\"#{adffvvbfbgnhn}\"\n" +
-                "\t\tcondition=\"thiscondition\" \t\t/>\n" +
-                "\n" +
-                "\t   \t\t\n" +
-                "\t   \t\t\t\n" +
-                "\t\n" +
-                "\t\t<phase-listener\n" +
-                "\t\tphase=\"before_render\"\n" +
-                "\t\taction=\"#{fsdxvvrfrveadasdbgtnhmhy}\"\n" +
-                "\t\tcondition=\"thiscondition\" \t\t/>\n" +
-                "\n" +
-                "\t   \t\t\n" +
-                "\t   \t\t</listeners>\n" +
-                "   \t\t\n" +
-                "\n" +
-                "\t\t\n" +
-                "\t\n" +
-                "\t\t<converter\n" +
-                "\t\tfactory=\"factory\" \t\tto-value=\"String\" \t\tto-object=\"String\" \t\tavoid-null-values= \"true\"\n" +
-                "\t\t/>\n" +
-                "\t\n" +
-                "\n" +
-                "\t\t\t\n" +
-                "\t\t</textfield>\n" +
-                "\n" +
-                "\t\t\t\t  \t\t\t\n" +
-                "\n" +
-                "\n" +
-                "\t\t\t\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\t\n" +
-                "\t\n" +
-                "\t\t\t  \t\t\t\n" +
-                "\t\n" +
-                "\n" +
-                "\t\t\t\t  \t\t\t\n" +
-                "\n" +
-                "\n" +
-                "\t\t\t\t  \t\t\t\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\t \n" +
-                "\n" +
-                "\n" +
-                "\n" +
-                "\t\n" +
-                "\t\n" +
-                "\n" +
-                "\n" +
-                "\t \n" +
-                "\n" +
-                "\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\t\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\n" +
-                "\t\t\n" +
-                "\n" +
-                "\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\n" +
-                "\n" +
-                "\t\n" +
-                "\n" +
-                "\n" +
-                "\n" +
-                "\t\t\t\n" +
-                "\n" +
-                "\n" +
-                "\n" +
-                "\t\t\t\t\n" +
-                "\n" +
-                "\t\t\t   \t\n" +
-                "\t\t\t   \t\n" +
-                "\t\t\t   \t</children>\n" +
-                "\t\t\t\t\n" +
-                "\n" +
-                "\t\t\t   \t</form>\n" +
-                "\t   \t";
+                "<form xmlns=\"http://www.itorbit.net/goofy/v2/form-definition\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema-instance\" name=\"TestForm2\" client-side-language=\"skippy\" title=\"TestForm2\" visible=\"false\" layoutable=\"true\" enabled=\"true\" rendered=\"true\" resizable=\"false\" draggable=\"true\" version=\"1\">\n" +
+                "    <resources>\n" +
+                "        <glossary name=\"MyReports\" />\n" +
+                "    </resources>\n" +
+                "    <layout>\n" +
+                "        <grid-layout number-of-columns=\"1\" margin-width=\"0\" margin-height=\"0\" horizontal-spacing=\"0\" vertical-spacing=\"0\" />\n" +
+                "    </layout>\n" +
+                "    <children>\n" +
+                "        <password-field value=\"#{unit.id}\" readonly=\"true\" default-widget=\"true\" tooltip=\"tooltip\" max-length=\"200\" name=\"Password17916\" enabled=\"true\" label=\"label\" layoutable=\"true\">\n" +
+                "            <layout-data>\n" +
+                "                <grid-layout-data row-span=\"1\" col-span=\"1\" v-grab=\"false\" h-grab=\"false\" v-alignment=\"center\" h-alignment=\"center\" />\n" +
+                "            </layout-data>\n" +
+                "            <validators>\n" +
+                "                <script-validator script=\"\" error-message=\"true\" run-at=\"server\" />\n" +
+                "                <number-validator integer=\"true\" minimum-value=\"10\" maximum-value=\"20\" include-minimum-boundry=\"true\" include-maximum-boundry=\"true\" run-at=\"client\" />\n" +
+                "                <required-validator run-at=\"client\" />\n" +
+                "                <string-validator regular-expression=\"true\" regular-expression-error-message=\"true\" minimum-length=\"true\" maximum-length=\"true\" run-at=\"client\" />\n" +
+                "                <email-validator run-at=\"client_and_server\" />\n" +
+                "            </validators>\n" +
+                "            <events>\n" +
+                "                <on-load client-side-language=\"inherit\" action=\"#{}\" name=\"event_17947\" run-at=\"server\"></on-load>\n" +
+                "                <on-load client-side-language=\"inherit\" action=\"#{}\" name=\"event_17948\" run-at=\"server\"></on-load>\n" +
+                "                <on-focus-lost condition=\"true\" client-side-language=\"inherit\" action=\"#{}true\" submit-region=\"true\" name=\"event_17949\" re-render=\"true\" fire-condition=\"true\" before=\"true\" on-success=\"true\" run-at=\"client\">\n" +
+                "                    <argument name=\"true\" value=\"true\" />\n" +
+                "                    <argument name=\"true\" value=\"true\" />\n" +
+                "                    <argument name=\"true\" value=\"true\" />\n" +
+                "                </on-focus-lost>\n" +
+                "                <on-deselect phase=\"after_update_model\" condition=\"true\" client-side-language=\"inherit\" action=\"#{}true\" submit-region=\"true\" name=\"event_17950\" re-render=\"true\" fire-condition=\"true\" before=\"true\" on-success=\"true\" run-at=\"server\">\n" +
+                "                    <argument name=\"true\" value=\"true\" />\n" +
+                "                    <argument name=\"true\" value=\"true\" />\n" +
+                "                    <argument name=\"true\" value=\"true\" />\n" +
+                "                    <argument name=\"true\" value=\"true\" />\n" +
+                "                </on-deselect>\n" +
+                "                <on-select phase=\"after_update_model\" condition=\"true\" client-side-language=\"inherit\" action=\"#{}true\" submit-region=\"true\" name=\"event_17951\" re-render=\"true\" fire-condition=\"true\" before=\"true\" on-success=\"true\" run-at=\"server\">\n" +
+                "                    <argument name=\"true\" value=\"true\" />\n" +
+                "                    <argument name=\"true\" value=\"true\" />\n" +
+                "                    <argument name=\"true\" value=\"true\" />\n" +
+                "                    <argument name=\"true\" value=\"true\" />\n" +
+                "                </on-select>\n" +
+                "                <on-edit phase=\"after_update_model\" condition=\"true\" client-side-language=\"inherit\" action=\"#{}true\" submit-region=\"true\" name=\"event_17952\" re-render=\"true\" fire-condition=\"true\" before=\"true\" on-success=\"true\" run-at=\"server\">\n" +
+                "                    <argument name=\"true\" value=\"true\" />\n" +
+                "                    <argument name=\"true\" value=\"true\" />\n" +
+                "                    <argument name=\"true\" value=\"true\" />\n" +
+                "                    <argument name=\"true\" value=\"true\" />\n" +
+                "                </on-edit>\n" +
+                "                <on-change phase=\"after_update_model\" condition=\"true\" client-side-language=\"inherit\" action=\"#{}true\" submit-region=\"true\" name=\"event_17953\" re-render=\"true\" fire-condition=\"true\" before=\"true\" on-success=\"true\" run-at=\"server\">\n" +
+                "                    <argument name=\"true\" value=\"true\" />\n" +
+                "                    <argument name=\"true\" value=\"true\" />\n" +
+                "                    <argument name=\"true\" value=\"true\" />\n" +
+                "                </on-change>\n" +
+                "                <on-load phase=\"after_update_model\" condition=\"true\" client-side-language=\"inherit\" action=\"#{}true\" submit-region=\"true\" name=\"event_17954\" re-render=\"true\" fire-condition=\"true\" before=\"true\" on-success=\"true\" run-at=\"server\">\n" +
+                "                    <argument name=\"true\" value=\"true\" />\n" +
+                "                    <argument name=\"true\" value=\"true\" />\n" +
+                "                    <argument name=\"true\" value=\"true\" />\n" +
+                "                </on-load>\n" +
+                "            </events>\n" +
+                "            <listeners>\n" +
+                "                <phase-listener phase=\"before_update_model\" action=\"#{true}\" condition=\"true\" />\n" +
+                "                <phase-listener phase=\"after_update_model\" action=\"#{}true\" condition=\"true\" />\n" +
+                "                <phase-listener phase=\"before_first_render\" action=\"#{}true\" condition=\"true\" />\n" +
+                "                <phase-listener phase=\"before_render\" action=\"#{}true\" condition=\"true\" />\n" +
+                "                <phase-listener phase=\"after_update_model\" action=\"#{}true\" condition=\"true\" />\n" +
+                "            </listeners>\n" +
+                "        </password-field>\n" +
+                "        <hidden name=\"LookUp_8175_last_searched_query\" value=\"#{LookUp_8175_query}\"></hidden>\n" +
+                "        <hidden name=\"LookUp_11106_last_searched_query\" value=\"#{LookUp_11106_query}\"></hidden>\n" +
+                "    </children>\n" +
+                "</form>";
     }
 }
 

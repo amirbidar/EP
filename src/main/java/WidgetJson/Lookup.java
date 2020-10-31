@@ -3,6 +3,7 @@ package WidgetJson;
 import Attributes.Label.Listeners;
 import Attributes.LookUp.ColumnsLookUp;
 import Attributes.LookUp.DataLookUp;
+import Attributes.LookUp.column;
 import Base.*;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
@@ -13,7 +14,7 @@ public class Lookup {
     public DataLookUp data;
     public Boolean layoutable;
     public BaseValidation validators;
-    public ColumnsLookUp columns;
+    public column columns;
     public BaseConverter converter;
     public String tooltip;
     @JsonProperty("full-text-search")
