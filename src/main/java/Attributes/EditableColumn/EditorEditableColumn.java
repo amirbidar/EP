@@ -1,3 +1,4 @@
+/*
 package Attributes.EditableColumn;
 
 import lombok.Setter;
@@ -37,3 +38,4 @@ public class EditorEditableColumn {
         }*/
 
 }
+*/

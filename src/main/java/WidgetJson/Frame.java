@@ -1,7 +1,6 @@
 package WidgetJson;
 
-import Base.EventAll;
-import Base.LayoutData;
+import Base.*;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
