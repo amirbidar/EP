@@ -8,6 +8,5 @@ import javax.xml.bind.annotation.XmlElement;
 
 @Data
 public class Glossary{
-    @XmlElement(name = "name")
     String name;
 }

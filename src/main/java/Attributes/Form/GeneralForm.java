@@ -19,7 +19,6 @@ public class GeneralForm {
     private String title;
     private Integer version;
     private String visible;
-/*    @XmlElement(name = "")*/
     @JacksonXmlProperty(localName = "client-side-language")
     private String clientLanguage;
     private String layoutable;
@@ -29,6 +28,4 @@ public class GeneralForm {
     private String rendered;
     private String description;
     private ResourcesForm resources;
-
-
 }
