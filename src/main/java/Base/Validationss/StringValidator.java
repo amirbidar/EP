@@ -13,8 +13,8 @@ class StringValidator {
     @JsonProperty("regular-expression-error-message")
     private String errorMessageRegularExpression;
     @JsonProperty("minimum-length")
-    private Integer minimumLength;
+    private String minimumLength;
     @JsonProperty("maximum-length")
-    private Integer maximumLength;
+    private String maximumLength;
 
 }

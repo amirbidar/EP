@@ -24,5 +24,4 @@ class GridLayoutData {
     @JsonProperty("h-alignment")
     public String hAlignment;
 
-
 }

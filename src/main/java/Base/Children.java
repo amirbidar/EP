@@ -47,10 +47,11 @@ public class  Children {
     @JsonProperty("radio")
     public RadioItem radioItem;
     public StaticList list;
+    @JsonProperty("tab-folder")
     public TabFolder tabFolder;
     //public TaskComment taskComment;
     @JsonProperty("textarea")
-    public TextArea textArea;
+    public Textarea textArea;
     @JsonProperty("textfield")
     public TextField textField;
   //  public TransitionCombo transitionCombo;

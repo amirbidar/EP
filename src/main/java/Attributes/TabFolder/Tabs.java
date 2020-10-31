@@ -1,5 +1,7 @@
 package Attributes.TabFolder;
 
+import java.util.List;
+
 public class Tabs {
-    public Tab tab;
+    public List<Tab> tab;
 }

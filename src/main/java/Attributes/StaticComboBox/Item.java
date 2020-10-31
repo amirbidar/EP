@@ -9,5 +9,5 @@ public class Item {
     public String name;
     public String icon;
     public String label;
-    public Integer value;
+    public String value;
 }
