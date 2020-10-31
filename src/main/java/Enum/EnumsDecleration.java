@@ -48,9 +48,9 @@ public class EnumsDecleration {
       DATE_AND_TIME
     }
     public enum DatePickerCalenderMode{
-        JALALI,
-        GREGORIAN,
-        JALALI_AND_GREGORIAN
+        jalali,
+        gregorian,
+        jalali_and_gregorian
 
     }
 

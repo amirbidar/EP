@@ -4,6 +4,7 @@ import Attributes.EditableTable.ColumnsEditableTable;
 import Attributes.EditableTable.DataEditableTable;
 import Attributes.Label.Listeners;
 import Base.BaseConverter;
+import Base.BaseValidation;
 import Base.EventAll;
 import Base.LayoutData;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -17,7 +18,7 @@ public class EditableGrid {
     @JsonProperty("delete-expression")
     public String deleteExpression;
     public Boolean layoutable;
-    public String validators;
+    public BaseValidation validators;
     public ColumnsEditableTable columns;
     public BaseConverter converter;
     @JsonProperty("find-expression")

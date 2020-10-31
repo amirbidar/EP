@@ -15,9 +15,14 @@ class GridLayoutData {
     public Boolean vGrab;
     @JsonProperty("row-span")
     public Integer rowSpan;
+    @JsonProperty("v-hint")
+    public Integer vHint;
+    @JsonProperty("h-hint")
+    public Integer hHint;
     @JsonProperty("v-alignment")
     public String vAlignment;
     @JsonProperty("h-alignment")
     public String hAlignment;
+
 
 }

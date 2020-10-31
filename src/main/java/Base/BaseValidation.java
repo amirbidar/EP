@@ -1,24 +1,32 @@
 package Base;
 
+import Base.EventListeners.OnClick;
 import Base.Validationss.*;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import Enum.*;
 import java.util.List;
 @Data
+
 public class BaseValidation {
   //  List<Validations> validations;
-
     @JsonProperty("required-validator")
-    public RequiredValidator requiredValidator;
+    public List<RequiredValidator> requiredValidator;
     @JsonProperty("email-validator")
-    public EmailValidator emailValidator;
+    public List<EmailValidator> emailValidator;
     @JsonProperty("number-validator")
-    public NumberValidator numberValidator;
+    public List<NumberValidator> numberValidator;
     @JsonProperty("string-validator")
-    public StringValidator stringValidator;
+    public List<StringValidator> stringValidator;
     @JsonProperty("script-validator")
-    public ScriptValidator scriptValidator;
+    public List<ScriptValidator> scriptValidator;
+    @JsonProperty("captcha-validator")
+    public List<CaptchaValidator> captchaValidator;
+    @JsonProperty("on-click")
+    public List<OnClick> onClick;
     @JsonProperty("selection-validator")
-    public SelectionValidation selectionValidation;
+    public List<SelectionValidation> selectionValidation;
 }

@@ -18,5 +18,7 @@ public class RadioItem {
     public String label;
     public String value;
     public Boolean enabled;
+    public Boolean visible;
+    public Boolean rendered;
     public EventAll events;
 }

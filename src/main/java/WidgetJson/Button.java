@@ -4,9 +4,12 @@ import Attributes.Label.Listeners;
 import Base.EventAll;
 import Base.LayoutData;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
 
+@Data
 public class Button {
     public Listeners listeners;
+    @JsonProperty("layout-data")
     public LayoutData layoutData;
     public EventAll events;
     public Boolean layoutable;
@@ -20,7 +23,6 @@ public class Button {
     public Boolean enabled;
     @JsonProperty("default-key")
     public Boolean defaultKey;
-    @JsonProperty("layout-data")
     public String name;
     public String action;
     @JsonProperty("icon-width")

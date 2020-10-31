@@ -37,6 +37,10 @@ public class EventAll {
     public List<OnSelectionChange> onSelectionChange;
     @JsonProperty("on-click")
     public List<OnClick> onClick;
+    @JsonProperty("on-double-click")
+    public List<OnDoubleClick> onDoubleClicks;
+    @JsonProperty("on-row-action")
+    public List<OnRowAction> onRowActions;
 
    /* @JsonProperty("on-load")
     public OnLoad onLoad2;

@@ -9,4 +9,7 @@ import java.util.List;
 public class ItemCheckBoxGroup {
 
     public List<CheckBoxItem> checkbox;
+    public String condition;
+    public String var;
+    public String value;
 }
