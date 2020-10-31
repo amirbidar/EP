@@ -23,6 +23,4 @@ public class CheckBoxItem {
     public Boolean selected;
     public Boolean enabled;
     public EventAll events;
-
-
 }

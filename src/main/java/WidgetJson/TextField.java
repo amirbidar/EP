@@ -25,6 +25,7 @@ public class TextField {
     public String value;
     public Listeners listeners;
     public BaseValidation validators;
+    @JsonProperty("layout-data")
     public LayoutData layoutData;
     public EventAll events;
     public BaseConverter converter;

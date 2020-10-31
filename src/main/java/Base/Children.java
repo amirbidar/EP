@@ -15,6 +15,7 @@ import java.awt.*;
 import java.util.List;
 @Data
 public class Children {
+    public Form form;
     public Button button;
     public Captcha captcha;
     @JsonProperty("checkbox-group")
