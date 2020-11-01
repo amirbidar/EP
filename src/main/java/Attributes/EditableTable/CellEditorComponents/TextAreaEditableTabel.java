@@ -3,7 +3,7 @@ package Attributes.EditableTable.CellEditorComponents;
 import Base.BaseConverter;
 import Base.BaseValidation;
 import Base.EventAll;
-import Enum.*;
+import Enum.EnumsDecleration;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 

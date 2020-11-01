@@ -2,13 +2,9 @@ package Base;
 
 
 import Attributes.EditableTable.CellEditorComponents.Layout;
-import Attributes.Form.*;
-import Attributes.Frame.EventFrame;
-import Attributes.Label.Listeners;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
-import java.util.List;
 @Data
 public class Form {
 

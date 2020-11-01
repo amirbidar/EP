@@ -2,7 +2,6 @@ package WidgetJson;
 
 import Attributes.CheckBoxGroup.ItemCheckBoxGroup;
 import Attributes.EditableTable.CellEditorComponents.Layout;
-import Attributes.Label.Listeners;
 import Base.*;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;

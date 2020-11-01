@@ -1,11 +1,11 @@
 package WidgetJson;
 
 import Attributes.DatePicker.DatePickerValidators;
-import Attributes.Label.Listeners;
 import Base.BaseConverter;
 import Base.EventAll;
-import Enum.*;
 import Base.LayoutData;
+import Base.Listeners;
+import Enum.EnumsDecleration;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 

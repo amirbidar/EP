@@ -3,9 +3,9 @@ package Attributes.EditableTable.CellEditorComponents;
 import Base.BaseConverter;
 import Base.BaseValidation;
 import Base.EventAll;
+import Enum.EnumsDecleration;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
-import Enum.*;
 
 @Data
 public class TextFieldEditableTabel {

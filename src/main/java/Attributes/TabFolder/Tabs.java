@@ -1,7 +1,9 @@
 package Attributes.TabFolder;
 
-import java.util.List;
+import lombok.Data;
 
+import java.util.List;
+@Data
 public class Tabs {
     public List<Tab> tab;
 }

@@ -2,10 +2,10 @@ package WidgetJson;
 
 import Attributes.Composite.Border;
 import Attributes.EditableTable.CellEditorComponents.Layout;
-import Attributes.Label.Listeners;
 import Base.Children;
 import Base.EventAll;
 import Base.LayoutData;
+import Base.Listeners;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 

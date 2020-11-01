@@ -1,8 +1,8 @@
 package WidgetJson;
 
-import Attributes.Label.Listeners;
 import Base.EventAll;
 import Base.LayoutData;
+import Base.Listeners;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
@@ -25,6 +25,7 @@ public class Button {
     public Boolean defaultKey;
     public String name;
     public String action;
+    public Boolean visible;
     @JsonProperty("icon-width")
     public Integer iconWidth;
 

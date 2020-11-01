@@ -1,12 +1,8 @@
 package WidgetJson;
 
 import Attributes.EditableTable.CellEditorComponents.Layout;
-import Attributes.Label.Listeners;
 import Attributes.RadioGroup.ItemRadioGroup;
-import Base.BaseConverter;
-import Base.BaseValidation;
-import Base.EventAll;
-import Base.LayoutData;
+import Base.*;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class RadioGroup {

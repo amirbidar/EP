@@ -1,7 +1,7 @@
 package Base.Validationss;
-import Enum.*;
+
+import Enum.EnumsDecleration;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import lombok.Data;
 
 @Data

@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Data
 public class DropDown {
-    public BaseListener listeners;
+    public Listeners listeners;
     public Boolean editable;
     public Boolean layoutable;
     public BaseValidation validators;

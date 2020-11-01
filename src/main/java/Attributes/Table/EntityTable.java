@@ -9,8 +9,8 @@ public class EntityTable {
     public Boolean editable;
     public String name;
     public List<PropertyTable> property;
-    public Integer id;
+    public String id;
     public String label;
-    public Integer value;
+    public String value;
 
 }

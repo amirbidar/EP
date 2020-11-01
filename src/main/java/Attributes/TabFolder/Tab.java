@@ -1,8 +1,8 @@
 package Attributes.TabFolder;
 
 import Attributes.EditableTable.CellEditorComponents.Layout;
-import Attributes.Label.Listeners;
 import Base.EventAll;
+import Base.Listeners;
 import lombok.Data;
 
 @Data

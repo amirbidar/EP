@@ -1,6 +1,5 @@
 package Attributes.EditableTable;
 
-import Base.BaseData;
 import lombok.Data;
 
 @Data

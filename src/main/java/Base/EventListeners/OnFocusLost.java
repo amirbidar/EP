@@ -1,6 +1,6 @@
 package Base.EventListeners;
 
-import Attributes.Label.Argument;
+import Base.Argument;
 import Enum.EnumsDecleration;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;

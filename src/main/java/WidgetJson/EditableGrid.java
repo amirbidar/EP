@@ -2,11 +2,7 @@ package WidgetJson;
 
 import Attributes.EditableTable.ColumnsEditableTable;
 import Attributes.EditableTable.DataEditableTable;
-import Attributes.Label.Listeners;
-import Base.BaseConverter;
-import Base.BaseValidation;
-import Base.EventAll;
-import Base.LayoutData;
+import Base.*;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 

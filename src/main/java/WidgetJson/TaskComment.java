@@ -1,8 +1,8 @@
 package WidgetJson;
 
-import Attributes.Label.Listeners;
 import Base.BaseConverter;
 import Base.LayoutData;
+import Base.Listeners;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 

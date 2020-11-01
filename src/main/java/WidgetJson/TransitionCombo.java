@@ -1,11 +1,7 @@
 package WidgetJson;
 
-import Attributes.Label.Listeners;
 import Attributes.StaticComboBox.ItemsComboBox;
-import Base.BaseConverter;
-import Base.BaseValidation;
-import Base.EventAll;
-import Base.LayoutData;
+import Base.*;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
@@ -18,7 +14,7 @@ public class TransitionCombo {
     public BaseConverter converter;
     public String tooltip;
     public String label;
-    public boolean enabled;
+    public Boolean enabled;
     @JsonProperty("layout-data")
     public LayoutData layoutData;
     public String name;

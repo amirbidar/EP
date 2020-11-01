@@ -2,16 +2,9 @@ package Base;
 
 import Attributes.Composite.Hidden;
 import WidgetJson.*;
-import WidgetJson.Button;
-import WidgetJson.Composite;
-import WidgetJson.Frame;
-import WidgetJson.Image;
-import WidgetJson.Label;
-import WidgetJson.TextField;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
-import java.awt.*;
 import java.util.List;
 @Data
 public class  Children {

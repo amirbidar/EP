@@ -1,6 +1,5 @@
 package WidgetJson;
 
-import Attributes.Label.Listeners;
 import Attributes.StaticComboBox.ItemsComboBox;
 import Base.*;
 import com.fasterxml.jackson.annotation.JsonProperty;

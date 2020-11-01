@@ -2,12 +2,9 @@ package Base;
 
 import Base.EventListeners.OnClick;
 import Base.Validationss.*;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import Enum.*;
+
 import java.util.List;
 @Data
 

@@ -1,9 +1,9 @@
 package Attributes.EditableTable.CellEditorComponents;
 
-import Attributes.Label.Listeners;
 import Base.BaseConverter;
 import Base.BaseValidation;
 import Base.EventAll;
+import Base.Listeners;
 import lombok.Data;
 
 @Data

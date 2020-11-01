@@ -1,24 +1,20 @@
 package WidgetJson;
 
 import Attributes.EditableTable.CellEditorComponents.Items;
-import Attributes.Label.Listeners;
-import Base.BaseConverter;
-import Base.BaseValidation;
-import Base.EventAll;
-import Base.LayoutData;
+import Base.*;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 @Data
 public class StaticCombobox {
     public Listeners listeners;
-    public boolean editable;
-    public boolean layoutable;
+    public Boolean editable;
+    public Boolean layoutable;
     public BaseValidation validators;
     public BaseConverter converter;
     public String tooltip;
     public String label;
-    public boolean enabled;
+    public Boolean enabled;
     @JsonProperty("layout-data")
     public LayoutData layoutData;
     public String name;

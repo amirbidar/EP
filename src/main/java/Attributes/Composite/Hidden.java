@@ -1,7 +1,7 @@
 package Attributes.Composite;
 
-import Attributes.Label.Listeners;
 import Base.BaseConverter;
+import Base.Listeners;
 
 public class Hidden {
     public Listeners listeners;

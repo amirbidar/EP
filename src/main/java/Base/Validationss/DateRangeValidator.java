@@ -1,4 +1,4 @@
-package Attributes.DatePicker;
+package Base.Validationss;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
@@ -6,9 +6,10 @@ import lombok.Data;
 @Data
 public class DateRangeValidator {
     @JsonProperty("maximum-value")
-    public int maximumValue;
+    public Integer maximumValue;
     @JsonProperty("minimum-value")
-    public int minimumValue;
+    public Integer minimumValue;
     @JsonProperty("run-at")
     public String runAt;
+
 }
